@@ -30,3 +30,6 @@ black:
 
 bandit:
 	poetry run bandit -r src/
+
+fastapi:
+	poetry run uvicorn main:app --reload --app-dir src/api
