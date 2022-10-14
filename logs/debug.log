@@ -1,0 +1,29 @@
+DEBUG 2022-10-13 22:02:04,455 [common.py:create_document_store:37] Created FAISS Document Store
+DEBUG 2022-10-13 22:02:09,963 [common.py:create_retriever:63] Created DensePassageRetriever
+DEBUG 2022-10-13 22:04:42,671 [common.py:create_document_store:37] Created FAISS Document Store
+DEBUG 2022-10-13 22:04:48,346 [common.py:create_retriever:63] Created DensePassageRetriever
+DEBUG 2022-10-13 23:22:21,560 [common.py:create_document_store:60] Created FAISS Document Store
+DEBUG 2022-10-13 23:22:26,892 [common.py:create_retriever:110] Created DensePassageRetriever
+CRITICAL 2022-10-13 23:23:46,910 [common.py:create_document_store:63] Unable to create FAISS Document Store: The number of documents present in the SQL database (2) does not match the number of embeddings in FAISS (0). Make sure your FAISS configuration file correctly points to the same database that was used when creating the original index.
+DEBUG 2022-10-13 23:23:52,587 [common.py:create_retriever:110] Created DensePassageRetriever
+ERROR 2022-10-13 23:23:52,589 [common.py:write_documents:182] Unable to write documents: 'NoneType' object has no attribute 'write_documents'
+DEBUG 2022-10-13 23:24:54,071 [common.py:create_document_store:60] Created FAISS Document Store
+DEBUG 2022-10-13 23:24:59,629 [common.py:create_retriever:110] Created DensePassageRetriever
+DEBUG 2022-10-13 23:26:01,554 [common.py:create_document_store:60] Created FAISS Document Store
+DEBUG 2022-10-13 23:26:06,942 [common.py:create_retriever:110] Created DensePassageRetriever
+DEBUG 2022-10-13 23:26:32,097 [common.py:create_document_store:60] Created FAISS Document Store
+DEBUG 2022-10-13 23:26:37,506 [common.py:create_retriever:110] Created DensePassageRetriever
+DEBUG 2022-10-13 23:27:51,926 [common.py:create_document_store:60] Created FAISS Document Store
+DEBUG 2022-10-13 23:27:57,394 [common.py:create_retriever:110] Created DensePassageRetriever
+DEBUG 2022-10-13 23:34:57,667 [common.py:create_document_store:64] Created FAISS Document Store
+DEBUG 2022-10-13 23:35:03,397 [common.py:create_retriever:112] Created DensePassageRetriever
+DEBUG 2022-10-13 23:35:55,643 [common.py:create_document_store:64] Created FAISS Document Store
+DEBUG 2022-10-13 23:36:00,898 [common.py:create_retriever:112] Created DensePassageRetriever
+DEBUG 2022-10-13 23:42:30,415 [common.py:create_document_store:63] Created FAISS Document Store
+DEBUG 2022-10-13 23:42:36,729 [common.py:create_retriever:111] Created DensePassageRetriever
+DEBUG 2022-10-13 23:42:59,982 [common.py:create_document_store:63] Created FAISS Document Store
+DEBUG 2022-10-13 23:43:04,959 [common.py:create_retriever:111] Created DensePassageRetriever
+DEBUG 2022-10-13 23:45:40,561 [common.py:create_document_store:63] Created FAISS Document Store
+DEBUG 2022-10-13 23:45:45,953 [common.py:create_retriever:111] Created DensePassageRetriever
+DEBUG 2022-10-13 23:46:42,132 [common.py:create_document_store:63] Created FAISS Document Store
+DEBUG 2022-10-13 23:46:47,764 [common.py:create_retriever:111] Created DensePassageRetriever

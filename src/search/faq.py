@@ -3,7 +3,7 @@ from common import DocumentStore
 
 class FAQ:
     def __init__(self):
-        self.doc_store = DocumentStore(index="FAQ")
+        self.doc_store = DocumentStore(index="FAQ", database_name="faq")
 
     def get_docs(self):
         self.doc_store.index_documents(
