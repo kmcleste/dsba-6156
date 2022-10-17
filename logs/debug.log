@@ -153,3 +153,33 @@ DEBUG 2022-10-16 22:53:47,989 [common.py:create_reader:225] Created FARMReader
 DEBUG 2022-10-16 22:55:27,483 [common.py:create_document_store:59] Loaded existing FAISS Document Store
 DEBUG 2022-10-16 22:55:33,061 [common.py:create_retriever:131] Created DensePassageRetriever
 DEBUG 2022-10-16 22:55:39,543 [common.py:create_reader:225] Created FARMReader
+DEBUG 2022-10-17 17:50:58,054 [common.py:create_document_store:59] Loaded existing FAISS Document Store
+DEBUG 2022-10-17 17:51:03,522 [common.py:create_retriever:131] Created DensePassageRetriever
+DEBUG 2022-10-17 17:51:08,561 [common.py:create_reader:225] Created FARMReader
+DEBUG 2022-10-17 17:55:23,252 [common.py:create_document_store:59] Loaded existing FAISS Document Store
+DEBUG 2022-10-17 17:55:28,565 [common.py:create_retriever:131] Created DensePassageRetriever
+DEBUG 2022-10-17 17:55:33,787 [common.py:create_reader:225] Created FARMReader
+DEBUG 2022-10-17 18:05:58,519 [common.py:create_document_store:59] Loaded existing FAISS Document Store
+DEBUG 2022-10-17 18:06:04,201 [common.py:create_retriever:131] Created DensePassageRetriever
+DEBUG 2022-10-17 18:06:12,942 [search.py:create_document_store:59] Loaded existing FAISS Document Store
+DEBUG 2022-10-17 18:06:18,418 [search.py:create_retriever:131] Created DensePassageRetriever
+DEBUG 2022-10-17 18:06:23,576 [search.py:create_reader:225] Created FARMReader
+DEBUG 2022-10-17 18:08:04,878 [search.py:create_document_store:59] Loaded existing FAISS Document Store
+DEBUG 2022-10-17 18:08:10,215 [search.py:create_retriever:131] Created DensePassageRetriever
+DEBUG 2022-10-17 18:08:15,169 [search.py:create_reader:225] Created FARMReader
+DEBUG 2022-10-17 18:12:22,403 [search.py:create_document_store:81] Created FAISS Document Store
+DEBUG 2022-10-17 18:12:28,001 [search.py:create_retriever:131] Created DensePassageRetriever
+DEBUG 2022-10-17 18:12:33,588 [search.py:create_reader:225] Created FARMReader
+DEBUG 2022-10-17 18:25:58,187 [search.py:create_document_store:59] Loaded existing FAISS Document Store
+DEBUG 2022-10-17 18:26:03,595 [search.py:create_retriever:131] Created DensePassageRetriever
+DEBUG 2022-10-17 18:26:08,847 [search.py:create_reader:225] Created FARMReader
+DEBUG 2022-10-17 18:28:12,327 [search.py:create_document_store:59] Loaded existing FAISS Document Store
+DEBUG 2022-10-17 18:28:17,822 [search.py:create_retriever:131] Created DensePassageRetriever
+DEBUG 2022-10-17 18:28:22,981 [search.py:create_reader:225] Created FARMReader
+DEBUG 2022-10-17 18:29:21,847 [search.py:create_document_store:59] Loaded existing FAISS Document Store
+DEBUG 2022-10-17 18:29:29,505 [search.py:create_document_store:59] Loaded existing FAISS Document Store
+DEBUG 2022-10-17 18:29:34,725 [search.py:create_retriever:131] Created DensePassageRetriever
+DEBUG 2022-10-17 18:29:39,585 [search.py:create_reader:225] Created FARMReader
+DEBUG 2022-10-17 18:30:32,642 [search.py:create_document_store:59] Loaded existing FAISS Document Store
+DEBUG 2022-10-17 18:30:37,852 [search.py:create_retriever:131] Created DensePassageRetriever
+DEBUG 2022-10-17 18:30:42,827 [search.py:create_reader:225] Created FARMReader

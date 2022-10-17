@@ -19,7 +19,7 @@ from haystack.pipelines import ExtractiveQAPipeline, BaseStandardPipeline
 from haystack.utils import convert_files_to_docs
 import torch
 
-from logger import logger
+from utils.logger import logger
 
 
 class HaystackHelper:

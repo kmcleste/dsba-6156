@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "This is a test."
+uvicorn main:app --reload --app-dir api/

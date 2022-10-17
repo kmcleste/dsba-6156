@@ -1,4 +1,6 @@
 import logging
+import os
+import pathlib
 
 from rich.logging import RichHandler
 
@@ -7,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 # the handler determines where the logs go: stdout/file
 shell_handler = RichHandler()
-file_handler = logging.FileHandler("logs/debug.log")
+file_handler = logging.FileHandler(pathlib.Path("logs", "debug.log"))
 
 logger.setLevel(logging.DEBUG)
 shell_handler.setLevel(logging.DEBUG)

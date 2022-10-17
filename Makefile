@@ -6,7 +6,7 @@ pip-reqs:
 	pip freeze > build/requirements.txt
 
 streamlit:
-	poetry run streamlit run src/01_Home.py
+	poetry run streamlit run src/ui/streamlit_app.py
 
 docker-build:
 	docker build -t streamlit:latest -f build/docker/Dockerfile .
