@@ -1,4 +1,5 @@
-FROM python:3.10-slim
+FROM python:3.9-slim
+LABEL org.opencontainers.image.source="https://github.com/kmcleste/dsba-6156"
 
 RUN mkdir -p app/logs
 
