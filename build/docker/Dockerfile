@@ -8,7 +8,7 @@ COPY build/requirements.txt /app/requirements.txt
 COPY build/docker/entrypoint.sh /app/entrypoint.sh
 
 RUN apt-get update -y -qq && \
-    apt-get install git g++ setuptools -y -qq && \
+    apt-get install git g++ -y -qq && \
     python3 -m pip install -U pip && \
     python3 -m pip install -r /app/requirements.txt && \
     chmod +x /app/entrypoint.sh
