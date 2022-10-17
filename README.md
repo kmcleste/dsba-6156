@@ -23,6 +23,10 @@ make docker-run
 
 Once the build is complete, docker should spin up a new container which hosts our Streamlit site. You can access the site by going to [localhost:8501](https://localhost:8501) in your browser.
 
+## Usage
+
+![](images/swagger_example.png)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
