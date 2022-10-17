@@ -1,19 +1,8 @@
-poetry-install:
-	poetry install
-	poetry run pre-commit install
-	poetry shell
-
 pip-install:
 	python3 -m pip install -r build/requirements.txt
 	pre-commit install
 
-poetry-requirements:
-	poetry export --with dev --without-hashes --format=requirements.txt > build/requirements.txt
-
-poetry-update-from-pip:
-	poetry add $( cat build/requirements.txt)
-
-pip-requirements:
+pip-reqs:
 	pip freeze > build/requirements.txt
 
 streamlit:
@@ -26,10 +15,10 @@ docker-run:
 	docker run -p 8501:8501 streamlit:latest
 
 black:
-	poetry run black .
+	black .
 
 bandit:
-	poetry run bandit -r src/
+	bandit -r src/
 
 fastapi:
-	poetry run uvicorn main:app --reload --app-dir src/api
+	uvicorn main:app --reload --app-dir src/api

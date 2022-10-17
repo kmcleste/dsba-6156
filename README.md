@@ -6,18 +6,10 @@ Shared repository for Applied Machine Learning Group 2 Final Project.
 
 ## Installation
 
-Select the installation method that best suits your environment. We suggest creating a virtual environment in the project directory prior to installing any dependencies.
-
 - pip
 
     ```bash
     make pip-install
-    ```
-
-- poetry (>= 1.2.0)
-
-    ```bash
-    make poetry-install
     ```
 
 ## Docker
