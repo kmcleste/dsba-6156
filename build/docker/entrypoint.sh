@@ -1,3 +1,3 @@
 #!/bin/bash
 
-uvicorn main:app --reload --app-dir api/
+python3 -m uvicorn main:app --host 0.0.0.0 --app-dir api/

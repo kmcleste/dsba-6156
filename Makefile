@@ -9,10 +9,10 @@ streamlit:
 	poetry run streamlit run src/ui/streamlit_app.py
 
 docker-build:
-	docker build -t streamlit:latest -f build/docker/Dockerfile .
+	docker build -t search:latest -f build/docker/Dockerfile .
 
 docker-run:
-	docker run -p 8501:8501 streamlit:latest
+	docker run -p 8000:8000 search:latest
 
 black:
 	black .
