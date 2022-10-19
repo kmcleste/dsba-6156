@@ -21,9 +21,17 @@ make docker-build
 make docker-run
 ```
 
-Once the build is complete, docker should spin up a new container which hosts our Streamlit site. You can access the site by going to [localhost:8501](https://localhost:8501) in your browser.
+Once the service has finished initializing, you can head on over to [127.0.0.1:8000/docs](https://127.0.0.1:8000/docs) to view the interactive Swagger documentation.
 
 ## Usage
+
+To start the FastAPI service, run the following from the base directory of the repo:
+
+```bash
+make fastapi
+```
+
+Once the service has finished initializing, you can head on over to [127.0.0.1:8000/docs](https://127.0.0.1:8000/docs) to view the interactive Swagger documentation.
 
 ![](images/swagger_example.png)
 
