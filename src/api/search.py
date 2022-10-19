@@ -2,9 +2,11 @@ import json
 import os
 from pathlib import Path
 import sys
-from typing import Optional, List, Union, Dict, Any
+from typing import Optional, Union, Dict, Any
 
+import aiofiles
 import faiss
+from fastapi import UploadFile
 from haystack import Document
 from haystack.document_stores import FAISSDocumentStore, BaseDocumentStore
 from haystack.nodes import (
@@ -104,7 +106,7 @@ class HaystackHelper:
         similarity_function: str = "dot_product",
         global_loss_buffer_size: int = 150000,
         progress_bar: bool = True,
-        devices: Optional[List[Union[str, torch.device]]] = None,
+        devices: Optional[list[Union[str, torch.device]]] = None,
         use_auth_token: Optional[Union[str, bool]] = None,
         scale_score: bool = True,
     ) -> BaseRetriever:
@@ -148,7 +150,7 @@ class HaystackHelper:
         batch_size: int = 16,
         progress_bar: bool = True,
         use_auth_token: Optional[Union[str, bool]] = None,
-        devices: Optional[List[Union[str, torch.device]]] = None,
+        devices: Optional[list[Union[str, torch.device]]] = None,
     ) -> BaseSummarizer:
         try:
             summarizer = TransformersSummarizer(
@@ -179,7 +181,7 @@ class HaystackHelper:
         context_window_size: int = 150,
         batch_size: int = 50,
         use_gpu: bool = False,
-        devices: Optional[List[Union[str, torch.device]]] = None,
+        devices: Optional[list[Union[str, torch.device]]] = None,
         no_ans_boost: float = 0.0,
         return_no_answer: bool = False,
         top_k: int = 10,
@@ -237,9 +239,29 @@ class HaystackHelper:
         answer: dict = pipeline.run(query=query, params=params, debug=debug)
         return answer
 
+    async def write_files(self, files: list[UploadFile]) -> dict:
+        path = Path(os.getcwd(), "src", "api", "data")
+        if path.exists():
+            for file in files:
+                try:
+                    contents = file.file.read()
+                    async with aiofiles.open(f"{path}/{file.filename}", "wb") as f:
+                        await f.write(contents)
+                except Exception as exc:
+                    logger.error(f"Unable to upload {file.filename}: {exc}")
+                    return {"message": f"Unable to upload {file.filename}"}
+                finally:
+                    file.file.close()
+
+            logger.debug("Successfully uploaded file(s)!")
+            return {"message": "Successfully uploaded file(s)!"}
+        else:
+            logger.error(f"Selected path does not exist: {path}")
+            return {"message": "Selected path does not exist"}
+
     def write_documents(
         self,
-        documents: Union[List[dict], List[Document], Path],
+        documents: Union[list[dict], list[Document], Path],
         batch_size: int = 10000,
         duplicate_documents: Optional[str] = "skip",
         headers: Optional[Dict[str, str]] = None,
@@ -275,8 +297,8 @@ class HaystackHelper:
         except Exception as exc:
             logger.error(f"Unable to write documents: {exc}")
 
-    def json2document(self, documents: List[dict]):
-        _documents: List[Document] = []
+    def json2document(self, documents: list[dict]):
+        _documents: list[Document] = []
         for document in documents:
             content: str = ""
             for key, value in document.items():
@@ -286,7 +308,7 @@ class HaystackHelper:
             )
         return _documents
 
-    def load_json(self, path: Path) -> List[dict]:
+    def load_json(self, path: Path) -> list[dict]:
         with open(file=path, mode="r") as f:
             data = json.load(f)
         return data

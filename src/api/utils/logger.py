@@ -1,9 +1,11 @@
 import logging
-import os
 import pathlib
 
 from rich.logging import RichHandler
 
+# TODO: Create logger class
+# TODO: Convert file handler to use json logging
+# TODO: Create log directory if not exists
 
 logger = logging.getLogger(__name__)
 
