@@ -21,7 +21,7 @@ make docker-build
 make docker-run
 ```
 
-Once the service has finished initializing, you can head on over to [127.0.0.1:8000/docs](https://127.0.0.1:8000/docs) to view the interactive Swagger documentation.
+Once the service has finished initializing, you can head on over to [127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to view the interactive Swagger documentation.
 
 ## Usage
 
@@ -31,7 +31,7 @@ To start the FastAPI service, run the following from the base directory of the r
 make fastapi
 ```
 
-Once the service has finished initializing, you can head on over to [127.0.0.1:8000/docs](https://127.0.0.1:8000/docs) to view the interactive Swagger documentation.
+Once the service has finished initializing, you can head on over to [127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to view the interactive Swagger documentation.
 
 ![](images/swagger_example.png)
 
