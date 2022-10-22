@@ -1,0 +1,23 @@
+# type: desciption
+
+## Proposed Changes
+
+ <!--- In case of a bug: Describe what caused the issue and how you solved it -->
+ <!--- In case of a feature: Describe what did you add and how it works -->
+
+## How did you test it?
+
+<!-- unit tests, integration tests, manual verification, instructions for manual tests -->
+
+## Notes for the reviewer
+
+<!-- E.g. point out section for the reviewer  -->
+
+## Checklist
+
+- [ ] I have read the [contributors guidelines](https://github.com/kmcleste/dsba-6156/blob/main/CONTRIBUTING.md) and the [code of conduct](https://github.com/kmcleste/dsba-6156/blob/main/CODE_OF_CONDUCT.md)
+- [ ] I have updated the related issue with new insights and changes
+- [ ] I added tests that demonstrate the correct behavior of the change
+- [ ] I've used the [conventional commit convention](https://www.conventionalcommits.org/en/v1.0.0/) for my PR title
+- [ ] I documented my code
+- [ ] I ran pre-commit hooks and fixed any issue
