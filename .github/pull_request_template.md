@@ -20,4 +20,4 @@
 - [ ] I added tests that demonstrate the correct behavior of the change
 - [ ] I've used the [conventional commit convention](https://www.conventionalcommits.org/en/v1.0.0/) for my PR title
 - [ ] I documented my code
-- [ ] I ran [pre-commit hooks](https://github.com/deepset-ai/haystack/blob/main/CONTRIBUTING.md#installation) and fixed any issue
+- [ ] I ran pre-commit hooks and fixed any issue
