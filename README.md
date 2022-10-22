@@ -4,26 +4,15 @@
 
 Shared repository for Applied Machine Learning Group 2 Final Project.
 
-## Installation
+## Getting Started
 
-- pip
-
-    ```bash
-    make pip-install
-    ```
-
-## Docker
-
-We have included some helper functions to build and run the docker image for you. Run the following:
-
-```bash
-make docker-build
-make docker-run
-```
-
-Once the service has finished initializing, you can head on over to [127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to view the interactive Swagger documentation.
+Make sure to read through our [Contribution Guidelines](https://github.com/kmcleste/dsba-6156/blob/main/CONTRIBUTING.md) for instructions on environment setup and creating your first commit.
 
 ## Usage
+
+Below are instructions for running the project locally and within a [Docker](https://www.docker.com/) container.
+
+### Local
 
 To start the FastAPI service, run the following from the base directory of the repo:
 
@@ -34,6 +23,17 @@ make fastapi
 Once the service has finished initializing, you can head on over to [127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to view the interactive Swagger documentation.
 
 ![](images/swagger_example.png)
+
+### Docker
+
+We have included some helper functions to build and run the docker image for you. Run the following:
+
+```bash
+make docker-build
+make docker-run
+```
+
+Once the service has finished initializing, you can head on over to [127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to view the interactive Swagger documentation.
 
 ## License
 
