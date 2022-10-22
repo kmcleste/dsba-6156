@@ -1,4 +1,4 @@
-# type: desciption
+# type: description
 
 ## Proposed Changes
 
