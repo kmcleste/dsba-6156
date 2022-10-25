@@ -1,24 +1,42 @@
 from fastapi import FastAPI, status, File, UploadFile
-import fastapi
+from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
 
-from models import Answer, Query, Root, Files, Index, Documents, DocumentsID, Summary
+from models import Answer, Query, Files, Index, Documents, DocumentsID, Summary
 from search import HaystackHelper
 
 app = FastAPI(
-    title="DSBA 6156: Applied Machine Learing",
-    description="This API offers neural search capabilities for the UNCC Code of Ethics.",
+    title="DSBA 6156: Applied Machine Learning",
+    docs_url=None,
+    redoc_url=None,
     version="0.1.0",
 )
 
 _haystack = HaystackHelper(index="semantic")
 
 
-@app.get(path="/", status_code=status.HTTP_200_OK, response_model=Root)
-def _root():
+@app.get("/docs", include_in_schema=False)
+def overridden_swagger():
+    return get_swagger_ui_html(
+        openapi_url="/openapi.json",
+        title="DSBA 6156: Applied Machine Learning",
+        swagger_favicon_url="https://raw.githubusercontent.com/kmcleste/dsba-6156/main/src/api/static/favicon.ico",
+    )
+
+
+@app.get("/redoc", include_in_schema=False)
+def overridden_redoc():
+    return get_redoc_html(
+        openapi_url="/openapi.json",
+        title="DSBA 6156: Applied Machine Learning",
+        redoc_favicon_url="https://raw.githubusercontent.com/kmcleste/dsba-6156/main/src/api/static/favicon.ico",
+    )
+
+
+@app.get(path="/", include_in_schema=False)
+def root():
     return {
         "author": "Kyle McLester",
         "version": "0.1.0",
-        "fastapi": fastapi.__version__,
     }
 
 

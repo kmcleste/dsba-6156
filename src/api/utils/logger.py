@@ -1,4 +1,5 @@
 import logging
+import os
 import pathlib
 
 from rich.logging import RichHandler
@@ -8,6 +9,9 @@ from rich.logging import RichHandler
 # TODO: Create log directory if not exists
 
 logger = logging.getLogger(__name__)
+
+if not pathlib.Path("logs").exists():
+    os.mkdir(path=pathlib.Path("logs"))
 
 # the handler determines where the logs go: stdout/file
 shell_handler = RichHandler()

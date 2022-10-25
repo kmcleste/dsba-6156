@@ -3,12 +3,6 @@ from typing import Union
 from pydantic import BaseModel
 
 
-class Root(BaseModel):
-    author: Union[str, list[str]]
-    version: str
-    fastapi: str
-
-
 class Query(BaseModel):
     query: str = "When was Marcus born?"
     params: Union[dict, None] = None
