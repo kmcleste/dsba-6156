@@ -24,6 +24,14 @@ Once the service has finished initializing, you can head on over to [127.0.0.1:8
 
 ![](images/swagger_example.png)
 
+To start the Streamlit service, open another terminal and run:
+
+```bash
+make streamlit
+```
+
+Once the Streamlit service has started, you can view the web app by going to [127.0.0.1:8501](http://127.0.0.1:8501) in your browser.
+
 ### Docker
 
 We have included some helper functions to build and run the docker image for you. Run the following:
