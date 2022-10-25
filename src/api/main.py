@@ -19,7 +19,7 @@ def overridden_swagger():
     return get_swagger_ui_html(
         openapi_url="/openapi.json",
         title="DSBA 6156: Applied Machine Learning",
-        swagger_favicon_url="https://raw.githubusercontent.com/kmcleste/dsba-6156/api-favicon/src/api/static/favicon.ico",
+        swagger_favicon_url="https://raw.githubusercontent.com/kmcleste/dsba-6156/develop/src/api/static/favicon.ico",
     )
 
 
@@ -28,7 +28,7 @@ def overridden_redoc():
     return get_redoc_html(
         openapi_url="/openapi.json",
         title="DSBA 6156: Applied Machine Learning",
-        redoc_favicon_url="https://raw.githubusercontent.com/kmcleste/dsba-6156/api-favicon/src/api/static/favicon.ico",
+        redoc_favicon_url="https://raw.githubusercontent.com/kmcleste/dsba-6156/develop/src/api/static/favicon.ico",
     )
 
 

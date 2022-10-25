@@ -455,3 +455,6 @@ DEBUG 2022-10-24 23:47:16,796 [search.py:create_reader:227] Created FARMReader
 DEBUG 2022-10-24 23:47:39,679 [search.py:create_document_store:61] Loaded existing FAISS Document Store
 DEBUG 2022-10-24 23:47:45,284 [search.py:create_retriever:133] Created DensePassageRetriever
 DEBUG 2022-10-24 23:47:50,434 [search.py:create_reader:227] Created FARMReader
+DEBUG 2022-10-24 23:52:52,541 [search.py:create_document_store:61] Loaded existing FAISS Document Store
+DEBUG 2022-10-24 23:52:58,036 [search.py:create_retriever:133] Created DensePassageRetriever
+DEBUG 2022-10-24 23:53:03,068 [search.py:create_reader:227] Created FARMReader
