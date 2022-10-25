@@ -21,4 +21,4 @@ bandit:
 	bandit -r src/
 
 fastapi:
-	uvicorn main:app --app-dir src/api
+	uvicorn main:app --reload --app-dir src/api
