@@ -6,7 +6,7 @@ pip-reqs:
 	pip freeze > build/requirements.txt
 
 streamlit:
-	poetry run streamlit run src/ui/streamlit_app.py
+	streamlit run src/ui/01_🏠_Home.py
 
 docker-build:
 	docker build -t search:latest -f build/docker/Dockerfile .
@@ -21,4 +21,4 @@ bandit:
 	bandit -r src/
 
 fastapi:
-	uvicorn main:app --reload --app-dir src/api
+	uvicorn main:app --app-dir src/api
