@@ -1,16 +1,32 @@
 from fastapi import FastAPI, status, File, UploadFile
+from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
+from fastapi.responses import FileResponse
 import fastapi
 
 from models import Answer, Query, Root, Files, Index, Documents, DocumentsID, Summary
 from search import HaystackHelper
 
-app = FastAPI(
-    title="DSBA 6156: Applied Machine Learing",
-    description="This API offers neural search capabilities for the UNCC Code of Ethics.",
-    version="0.1.0",
-)
+app = FastAPI(docs_url=None, redoc_url=None)
 
 _haystack = HaystackHelper(index="semantic")
+
+
+@app.get("/docs", include_in_schema=False)
+def overridden_swagger():
+    return get_swagger_ui_html(
+        openapi_url="/openapi.json",
+        title="DSBA 6156: Applied Machine Learning",
+        swagger_favicon_url="https://brand.charlotte.edu/sites/brand.charlotte.edu/files/media/logos/C_only.png",
+    )
+
+
+@app.get("/redoc", include_in_schema=False)
+def overridden_redoc():
+    return get_redoc_html(
+        openapi_url="/openapi.json",
+        title="DSBA 6156: Applied Machine Learning",
+        redoc_favicon_url="https://brand.charlotte.edu/sites/brand.charlotte.edu/files/media/logos/C_only.png",
+    )
 
 
 @app.get(path="/", status_code=status.HTTP_200_OK, response_model=Root)
