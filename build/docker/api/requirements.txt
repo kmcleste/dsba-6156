@@ -1,0 +1,9 @@
+aiofiles==22.1.0
+-e git+https://github.com/deepset-ai/haystack.git@3319ef6d1c8f0b8a4d80d0f531c6ea0fd1c02e6e#egg=farm_haystack
+uvicorn==0.19.0
+fastapi==0.86.0
+pydantic==1.10.2
+faiss-cpu==1.7.2
+torch==1.12.1
+rich==12.6.0
+python-multipart==0.0.5
