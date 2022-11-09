@@ -13,7 +13,7 @@ def main():
     st.markdown("# Admin Config")
 
     try:
-        r: requests.Response = requests.get(url="http://127.0.0.1:8000/")
+        r: requests.Response = requests.get(url="http://0.0.0.0:8000/")
 
         st.write(f"API Status: {'OK' if r.status_code else 'DEGRADED'}")
     except Exception:

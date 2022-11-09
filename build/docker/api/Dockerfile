@@ -16,4 +16,4 @@ WORKDIR /app
 
 EXPOSE 8000
 
-ENTRYPOINT ["uvicorn", "main:app", "--port", "8000", "--app-dir", "api/"]
+ENTRYPOINT ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--app-dir", "api/"]
