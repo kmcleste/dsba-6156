@@ -1,4 +1,3 @@
-import json
 import os
 from pathlib import Path
 import sys
@@ -50,6 +49,7 @@ class HaystackHelper:
         ef_construction: int = 80,
         validate_index_sync: bool = True,
     ) -> BaseDocumentStore:
+        """Initialize an empty document store"""
         try:
             if (
                 Path(os.getcwd(), "faiss_document_store.db").exists()
@@ -276,6 +276,7 @@ class HaystackHelper:
                     )
                 except Exception as exc:
                     logger.error(f"Unable to convert files to proper format: {exc}")
+                    return {"message": "Unable to convert files to proper format"}
             self.document_store.write_documents(
                 documents=documents,
                 index=self.index,
@@ -294,21 +295,8 @@ class HaystackHelper:
                 self.document_store.save(index_path="faiss_document_store")
             except Exception as exc:
                 logger.error(f"Unable to save FAISS Document Store: {exc}")
+                return {"message": "Unable to save FAISS Document Store"}
+            return {"message": "Successfully uploaded file(s)!"}
         except Exception as exc:
             logger.error(f"Unable to write documents: {exc}")
-
-    def json2document(self, documents: list[dict]):
-        _documents: list[Document] = []
-        for document in documents:
-            content: str = ""
-            for key, value in document.items():
-                content += f"{key}: {value}\n"
-            _documents.append(
-                Document(content=content, content_type="text", meta=document)
-            )
-        return _documents
-
-    def load_json(self, path: Path) -> list[dict]:
-        with open(file=path, mode="r") as f:
-            data = json.load(f)
-        return data
+            return {"message": "Unable to write documents"}

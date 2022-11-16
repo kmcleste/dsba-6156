@@ -1,3 +1,4 @@
+import json
 import requests
 
 import streamlit as st
@@ -12,8 +13,25 @@ def main():
 
     st.markdown("# Admin Config")
 
+    # TODO: Define callback to save/load settings to/from json
+
+    # def write_settings():
+    #     with open("settings.json", "w") as f:
+    #         f.write(json.dumps(st.session_state["deployment-method"], indent=4))
+
+    # st.selectbox(label="Deployment Method", options=["docker","cli"], key="deployment-method", on_change=write_settings)
+
+    st.selectbox(
+        label="Deployment Method", options=["docker", "cli"], key="deployment-method"
+    )
+
+    if "docker" in st.session_state.get("deployment-method"):
+        st.session_state["api_base_url"] = "http://api:8000/"
+    else:
+        st.session_state["api_base_url"] = "http://127.0.0.1:8000/"
+
     try:
-        r: requests.Response = requests.get(url="http://127.0.0.1:8000/")
+        r: requests.Response = requests.get(url=st.session_state.get("api_base_url"))
 
         st.write(f"API Status: {'OK' if r.status_code else 'DEGRADED'}")
     except Exception:

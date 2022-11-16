@@ -26,7 +26,7 @@ def main():
             try:
                 with st.spinner(text="🧠 Performing neural search..."):
                     r: requests.Response = requests.post(
-                        url="http://127.0.0.1:8000/search", json=data
+                        url=st.session_state.get("api_base_url") + "search", json=data
                     )
                     st.json(r.json())
             except Exception:
