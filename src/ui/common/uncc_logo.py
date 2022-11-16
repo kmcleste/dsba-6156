@@ -4,7 +4,7 @@ from PIL import Image
 
 import streamlit as st
 
-path = pathlib.Path(os.getcwd(), "ui", "common", "uncc_white_logo.png")
+path = pathlib.Path(os.getcwd(), "src", "ui", "common", "uncc_white_logo.png")
 image = Image.open(path)
 
 

@@ -276,6 +276,7 @@ class HaystackHelper:
                     )
                 except Exception as exc:
                     logger.error(f"Unable to convert files to proper format: {exc}")
+                    return {"message": "Unable to convert files to proper format"}
             self.document_store.write_documents(
                 documents=documents,
                 index=self.index,
@@ -294,5 +295,8 @@ class HaystackHelper:
                 self.document_store.save(index_path="faiss_document_store")
             except Exception as exc:
                 logger.error(f"Unable to save FAISS Document Store: {exc}")
+                return {"message": "Unable to save FAISS Document Store"}
+            return {"message": "Successfully uploaded file(s)!"}
         except Exception as exc:
             logger.error(f"Unable to write documents: {exc}")
+            return {"message": "Unable to write documents"}

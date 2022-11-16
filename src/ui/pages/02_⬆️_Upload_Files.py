@@ -1,4 +1,4 @@
-from io import StringIO
+import requests
 
 import streamlit as st
 
@@ -25,30 +25,11 @@ def main():
 
         if submit:
             if st.session_state.get("file-uploader"):
-                for file in st.session_state["file-uploader"]:
-                    try:
-                        if ".txt" in file.name:
-                            content: dict = {
-                                "name": file.name,
-                                "type": file.type,
-                                "size (KB)": file.size / 1000,  # convert to kilobytes
-                                "head": StringIO(
-                                    file.getvalue().decode("utf-8")
-                                ).read()[
-                                    :500
-                                ],  # print the first 500 chars of txt
-                            }
-                        else:
-                            content: dict = {
-                                "name": file.name,
-                                "type": file.type,
-                                "size": file.size / 1000,
-                            }
-                        st.write(content)
-                    except Exception:
-                        st.error(f"Unable to process {file.name}")
-                    finally:
-                        file.close()
+                r: requests.Response = requests.post(
+                    url=st.session_state.get("api_base_url") + "upload-files",
+                    files={"files": x for x in st.session_state.get("file-uploader")},
+                )
+                st.write(r.json())
 
 
 if __name__ == "__main__":

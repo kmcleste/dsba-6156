@@ -5,7 +5,6 @@ services:
     image: api:latest
     ports:
       - "8000:8000"
-    network_mode: bridge
 
   ui:
     image: ui:latest
@@ -13,4 +12,3 @@ services:
       - "8501:8501"
     depends_on:
       - api
-    network_mode: bridge
