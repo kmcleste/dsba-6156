@@ -1,4 +1,12 @@
 [theme]
 base="dark"
+primaryColor="#a49665"
 backgroundColor="#005035"
 secondaryBackgroundColor="#012d1c"
+
+[browser]
+serverAddress = "127.0.0.1"
+gatherUsageStats = false
+
+[server]
+port = 8501
