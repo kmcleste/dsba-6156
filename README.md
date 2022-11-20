@@ -22,13 +22,15 @@ make fastapi
 
 Once the service has finished initializing, you can head on over to [127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to view the interactive Swagger documentation.
 
-![](images/swagger_example.png)
+![Swagger Documentation](images/swagger_example.png)
 
 To start the Streamlit service, open another terminal and run:
 
 ```bash
 make streamlit
 ```
+
+![Streamlit Home Page](images/streamlit_home.png)
 
 Once the Streamlit service has started, you can view the web app by going to [127.0.0.1:8501](http://127.0.0.1:8501) in your browser.
 
