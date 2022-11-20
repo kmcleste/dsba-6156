@@ -4,7 +4,7 @@ LABEL org.opencontainers.image.source="https://github.com/kmcleste/dsba-6156"
 RUN mkdir -p app/logs && \
     apt-get update -yq
 
-COPY src/ui app/ui
+COPY src/ui app/src/ui
 COPY build/docker/ui/requirements.txt /app/requirements.txt
 COPY .streamlit /app/.streamlit
 
@@ -15,4 +15,4 @@ WORKDIR /app
 
 EXPOSE 8501
 
-ENTRYPOINT ["streamlit", "run", "ui/01_🏠_Home.py"]
+ENTRYPOINT ["streamlit", "run", "src/ui/01_🏠_Home.py"]

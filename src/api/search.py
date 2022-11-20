@@ -1,5 +1,6 @@
+import json
 import os
-from pathlib import Path
+import pathlib
 import sys
 from typing import Optional, Union, Dict, Any
 
@@ -29,6 +30,7 @@ class HaystackHelper:
         self.document_store: BaseDocumentStore = self.create_document_store()
         self.retriever: BaseRetriever = self.create_retriever()
         self.reader: BaseReader = self.create_reader()
+        self.data_path = pathlib.Path(os.getcwd(), "src", "api", "data")
 
     def create_document_store(
         self,
@@ -41,8 +43,8 @@ class HaystackHelper:
         embedding_field: str = "embedding",
         progress_bar: bool = True,
         duplicate_documents: str = "skip",
-        faiss_index_path: Union[str, Path] = None,
-        faiss_config_path: Union[str, Path] = None,
+        faiss_index_path: Union[str, pathlib.Path] = None,
+        faiss_config_path: Union[str, pathlib.Path] = None,
         isolation_level: str = None,
         n_links: int = 64,
         ef_search: int = 20,
@@ -52,8 +54,8 @@ class HaystackHelper:
         """Initialize an empty document store"""
         try:
             if (
-                Path(os.getcwd(), "faiss_document_store.db").exists()
-                and Path(os.getcwd(), "faiss_document_store.json").exists()
+                pathlib.Path(os.getcwd(), "faiss_document_store.db").exists()
+                and pathlib.Path(os.getcwd(), "faiss_document_store.json").exists()
             ):
                 document_store = FAISSDocumentStore.load(
                     index_path="faiss_document_store"
@@ -90,10 +92,10 @@ class HaystackHelper:
     def create_retriever(
         self,
         query_embedding_model: Union[
-            Path, str
+            pathlib.Path, str
         ] = "facebook/dpr-question_encoder-single-nq-base",
         passage_embedding_model: Union[
-            Path, str
+            pathlib.Path, str
         ] = "facebook/dpr-ctx_encoder-single-nq-base",
         model_version: Optional[str] = None,
         max_seq_len_query: int = 64,
@@ -233,19 +235,26 @@ class HaystackHelper:
     def extractive_search(
         self, query: str, params: Optional[dict] = None, debug: Optional[bool] = None
     ) -> dict:
-        pipeline: BaseStandardPipeline = ExtractiveQAPipeline(
-            reader=self.reader, retriever=self.retriever
-        )
-        answer: dict = pipeline.run(query=query, params=params, debug=debug)
-        return answer
+        try:
+            pipeline: BaseStandardPipeline = ExtractiveQAPipeline(
+                reader=self.reader, retriever=self.retriever
+            )
+            answer: dict = pipeline.run(query=query, params=params, debug=debug)
+            return answer["answers"]
+        except Exception as e:
+            logger.error(f"Unable to perform extractive search: {e}")
+            return {
+                "message": "Something went wrong. Unable to perform extractive search."
+            }
 
     async def write_files(self, files: list[UploadFile]) -> dict:
-        path = Path(os.getcwd(), "src", "api", "data")
-        if path.exists():
+        if self.data_path.exists():
             for file in files:
                 try:
                     contents = file.file.read()
-                    async with aiofiles.open(f"{path}/{file.filename}", "wb") as f:
+                    async with aiofiles.open(
+                        f"{self.data_path}/{file.filename}", "wb"
+                    ) as f:
                         await f.write(contents)
                 except Exception as exc:
                     logger.error(f"Unable to upload {file.filename}: {exc}")
@@ -256,20 +265,20 @@ class HaystackHelper:
             logger.debug("Successfully uploaded file(s)!")
             return {"message": "Successfully uploaded file(s)!"}
         else:
-            logger.error(f"Selected path does not exist: {path}")
+            logger.error(f"Selected path does not exist: {self.data_path}")
             return {"message": "Selected path does not exist"}
 
     def write_documents(
         self,
-        documents: Union[list[dict], list[Document], Path],
-        batch_size: int = 10000,
+        documents: Union[list[dict], list[Document], pathlib.Path],
+        batch_size: int = 10_000,
         duplicate_documents: Optional[str] = "skip",
         headers: Optional[Dict[str, str]] = None,
         update_existing_embeddings: bool = False,
         filters: Optional[Dict[str, Any]] = None,
-    ) -> None:
+    ) -> dict:
         try:
-            if isinstance(documents, Path):
+            if isinstance(documents, pathlib.Path):
                 try:
                     documents = convert_files_to_docs(
                         dir_path=documents, split_paragraphs=True
@@ -296,7 +305,49 @@ class HaystackHelper:
             except Exception as exc:
                 logger.error(f"Unable to save FAISS Document Store: {exc}")
                 return {"message": "Unable to save FAISS Document Store"}
+
+            # removes source files from "data" directory to reduce storage usage
+            [pathlib.Path.unlink(f) for f in self.data_path.iterdir() if f.is_file()]
+
             return {"message": "Successfully uploaded file(s)!"}
+
         except Exception as exc:
             logger.error(f"Unable to write documents: {exc}")
             return {"message": "Unable to write documents"}
+
+    def delete_documents(
+        self,
+        ids: Union[list[str], None] = None,
+        batch_size: int = 10_000,
+        headers: Optional[Dict[str, str]] = None,
+        update_existing_embeddings: bool = False,
+        filters: Optional[Dict[str, Any]] = None,
+    ) -> dict:
+        try:
+            self.document_store.delete_documents(
+                index=self.index, ids=ids, headers=headers, filters=filters
+            )
+            self.document_store.update_embeddings(
+                retriever=self.retriever,
+                index=self.index,
+                update_existing_embeddings=update_existing_embeddings,
+                filters=filters,
+                batch_size=batch_size,
+            )
+
+            try:
+                self.document_store.save(index_path="faiss_document_store")
+            except Exception as exc:
+                logger.error(f"Unable to save FAISS Document Store: {exc}")
+                return {"message": "Unable to save FAISS Document Store"}
+
+            return {"message": f"Successfully deleted {'all' if ids is None else ids}"}
+
+        except Exception:
+            return {"message": f"Unable to delete {'all' if ids is None else ids}"}
+
+    def describe_documents(self):
+        try:
+            return self.document_store.describe_documents(index=self.index)
+        except Exception:
+            return {"message": "There was an error retrieving index information"}
