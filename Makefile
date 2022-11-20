@@ -14,7 +14,7 @@ docker-run-ui:
 	docker run -p 8501:8501 search-ui:latest
 
 docker-run-api:
-	docker run -p 8000:8000 -e API_BASE_URL=http://search-api:8000 search-api:latest
+	docker run -p 8000:8000 -e API_BASE_URL=http://api:8000 search-api:latest
 
 black:
 	black .

@@ -17,6 +17,6 @@ services:
     ports:
       - "8501:8501"
     environment:
-      - API_BASE_URL=http://search-api:8000
+      - API_BASE_URL=http://api:8000
     depends_on:
       - api
