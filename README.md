@@ -42,13 +42,6 @@ docker-compose up
 
 Once the services have finished initializing, you can head on over to [127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) and [127.0.0.1:8501](http://127.0.0.1:8501) to view the Swagger documentation and Streamlit app, respectively.
 
-To start the services independent of one another, you can run each command in a separate terminal:
-
-```bash
-make docker-run-ui
-make docker-run-api
-```
-
 To build the images locally, run:
 
 ```bash
@@ -65,8 +58,6 @@ docker-compose -f docker-compose-dev.yml build
 # build and run
 docker-compose -f docker-compose-dev.yml up --build
 ```
-
-Note: If the docker images do not already exist on your system, they will be built automatically. This process can take some time.
 
 ## License
 
