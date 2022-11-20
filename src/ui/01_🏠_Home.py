@@ -15,19 +15,19 @@ def main():
         """
         For the DSBA 6156: Applied Machine Learning project we created a neural-based search engine.
         This search engine leverages the open-source framework "Haystack" which enables us to perform
-        semantic search, summarization, and text generation.
+        semantic search, summarization, and various other NLP-related tasks.
 
-        ## Overview
+        ## Table of Contents
 
-        This is the overview section.
-
-        ## Usage
-
-        This is the usage section.
-
-        ## Something
-
-        This is another section that should probably have information but I can't think of anything atm.
+        1. Home (⭐️ you are here)
+        2. [Upload Files](http://127.0.0.1:8501/Upload_Files)
+            - Upload txt, pdf, docx, and md files to search database
+        3. [Index Viewer](http://127.0.0.1:8501/Index_Viewer)
+            - See database metrics and explore the indexed documents
+        4. [Search](http://127.0.0.1:8501/Search)
+            - Perform natural-language semantic search across the index
+        5. [Admin Panel](http://127.0.0.1:8501/Admin_Panel)
+            - API status
 
     """
     )

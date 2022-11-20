@@ -2,13 +2,13 @@ pip-install:
 	python3 -m pip install -r requirements.txt
 	pre-commit install
 
-ui-build:
-	docker build -t ui:latest -f build/docker/ui/Dockerfile .
+docker-build-ui:
+	docker build -t search-ui:latest -f build/docker/ui/Dockerfile .
 
-api-build:
-	docker build -t api:latest -f build/docker/api/Dockerfile .
+docker-build-api:
+	docker build -t search-api:latest -f build/docker/api/Dockerfile .
 
-docker: ui-build api-build
+docker-build: ui-build api-build
 
 black:
 	black .
