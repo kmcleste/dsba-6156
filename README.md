@@ -34,14 +34,22 @@ Once the Streamlit service has started, you can view the web app by going to [12
 
 ### Docker
 
-We have included some helper functions to build and run the docker image for you. Run the following:
+To start the services in Docker, run the following:
 
 ```bash
-make docker-build
-make docker-run
+docker-compose up
 ```
 
-Once the service has finished initializing, you can head on over to [127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to view the interactive Swagger documentation.
+Once the services have finished initializing, you can head on over to [127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) and [127.0.0.1:8501](http://127.0.0.1:8501) to view the Swagger documentation and Streamlit app, respectively.
+
+To start the services independent of one another, you can run each command in a separate terminal:
+
+```bash
+make docker-streamlit
+make docker-api
+```
+
+Note: If the docker images do not already exist on your system, they will be built automatically. This process can take some time.
 
 ## License
 
