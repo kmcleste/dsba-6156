@@ -4,9 +4,9 @@ LABEL org.opencontainers.image.source="https://github.com/kmcleste/dsba-6156"
 RUN mkdir -p app/logs
 
 RUN apt-get update -y -qq && \
-    apt-get install git g++ ffmpeg libsndfile1 -y -qq
+    apt-get install git g++ ffmpeg libsndfile1 xpdf -y -qq
 
-COPY src/api app/api
+COPY src/api app/src/api
 COPY build/docker/api/requirements.txt /app/requirements.txt
 
 RUN python3 -m pip install -U pip && \
@@ -16,4 +16,4 @@ WORKDIR /app
 
 EXPOSE 8000
 
-ENTRYPOINT ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--app-dir", "api/"]
+ENTRYPOINT ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--app-dir", "src/api/"]

@@ -17,7 +17,7 @@ bandit:
 	bandit -r src/
 
 fastapi:
-	uvicorn main:app --app-dir src/api
+	uvicorn main:app --reload --reload-dir src/api --app-dir src/api
 
 streamlit:
 	streamlit run src/ui/01_🏠_Home.py

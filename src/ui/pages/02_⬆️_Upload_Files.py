@@ -1,8 +1,7 @@
-import requests
-
 import streamlit as st
 
 from common.uncc_logo import logo
+from common.requests_common import Request
 
 
 def main():
@@ -25,11 +24,15 @@ def main():
 
         if submit:
             if st.session_state.get("file-uploader"):
-                r: requests.Response = requests.post(
-                    url=st.session_state.get("api_base_url") + "upload-files",
-                    files={"files": x for x in st.session_state.get("file-uploader")},
-                )
-                st.write(r.json())
+                with st.spinner(text="⬆️ Uploading files..."):
+                    upload_files_kwargs: dict = {
+                        "files": {
+                            "files": x for x in st.session_state.get("file-uploader")
+                        }
+                    }
+                    r = Request.post(endpoint="/upload-files", **upload_files_kwargs)
+                if r:
+                    st.write(r.json().get("message"))
 
 
 if __name__ == "__main__":

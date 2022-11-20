@@ -4,16 +4,13 @@ from pydantic import BaseModel
 
 
 class Query(BaseModel):
-    query: str = "When was Marcus born?"
-    params: Union[dict, None] = None
+    query: str = "What is the meaning of life?"
+    params: Union[dict, None] = {"top_k": 10}
     debug: Union[bool, None] = False
 
 
 class Answer(BaseModel):
-    answer: str
-    score: float
-    context: str
-    document_id: str
+    answer: list[dict]
 
 
 class Files(BaseModel):
@@ -38,3 +35,10 @@ class Summary(BaseModel):
     chars_max: int
     chars_min: int
     chars_median: int
+
+
+class HTTPError(BaseModel):
+    detail: str
+
+    class Config:
+        schema_extra = {"example": {"detail": "string"}}

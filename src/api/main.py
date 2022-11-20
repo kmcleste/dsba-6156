@@ -1,11 +1,21 @@
 import os
 import pathlib
+from typing import Union
 
-from fastapi import FastAPI, status, File, UploadFile
+from fastapi import FastAPI, status, File, UploadFile, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
 
-from models import Answer, Query, Files, Index, Documents, DocumentsID, Summary
+from models import (
+    Answer,
+    Query,
+    Files,
+    Index,
+    Documents,
+    DocumentsID,
+    Summary,
+    HTTPError,
+)
 from search import HaystackHelper
 
 app = FastAPI(
@@ -51,11 +61,16 @@ async def root():
     return HTMLResponse(content=content)
 
 
+@app.get(path="/health")
+async def health():
+    return HTMLResponse(status_code=status.HTTP_200_OK)
+
+
 @app.post(
     path="/search",
     status_code=status.HTTP_200_OK,
-    response_model=Answer,
     tags=["search"],
+    responses={404: {"model": HTTPError, "description": "Empty Index"}},
 )
 def search(query: Query):
     """Query the index using extractive search and return an answer.
@@ -82,16 +97,21 @@ def search(query: Query):
 
             - document_id (str): unique identifier
     """
-    return _haystack.extractive_search(
-        query=query.query, params=query.params, debug=query.debug
-    )["answers"][0]
+    if _haystack.document_store.get_document_count() != 0:
+        return _haystack.extractive_search(
+            query=query.query, params=query.params, debug=query.debug
+        )
+    else:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Index is empty"
+        )
 
 
 @app.post(
     path="/upload-files",
     status_code=status.HTTP_201_CREATED,
     response_model=Files,
-    tags=["documents"],
+    tags=["documents", "modify"],
 )
 async def upload_files(
     files: list[UploadFile] = File(...),
@@ -118,7 +138,8 @@ def fetch_documents(index: Index):
             - index (str): name of the desired index
 
     """
-    return {"documents": _haystack.document_store.get_all_documents(index=index.index)}
+    docs = _haystack.document_store.get_all_documents(index=index.index)
+    return {"documents": docs}
 
 
 @app.post(
@@ -152,17 +173,21 @@ def documents_by_id(input: DocumentsID):
     response_model=Summary,
     tags=["documents"],
 )
-def describe_documents_(input: Index):
-    """Summary statistics for a given index
-
-    **Args**:
-
-        input (Index): A dictionary containing:
-
-            - index (str): name of the desired index
-
-    """
-    return _haystack.document_store.describe_documents(index=input.index)
+def describe_documents_():
+    """Summary statistics for a given index"""
+    if _haystack.document_store.get_document_count() != 0:
+        return _haystack.describe_documents()
+    else:
+        raise HTTPException(status_code=404, detail="Index is empty")
 
 
-# TODO: Add endpoint to index documents found in 'data' directory
+@app.post(
+    path="/delete-documents",
+    status_code=status.HTTP_200_OK,
+    tags=["documents", "modify"],
+)
+def delete_documents(ids: Union[list[str], None] = None):
+    if _haystack.document_store.get_document_count() != 0:
+        return _haystack.delete_documents(ids=ids)
+    else:
+        raise HTTPException(status_code=404, detail="Index is empty")
