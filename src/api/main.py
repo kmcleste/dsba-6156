@@ -111,7 +111,7 @@ def search(query: Query):
     path="/upload-files",
     status_code=status.HTTP_201_CREATED,
     response_model=Files,
-    tags=["documents", "modify"],
+    tags=["modify"],
 )
 async def upload_files(
     files: list[UploadFile] = File(...),
@@ -181,10 +181,10 @@ def describe_documents_():
         raise HTTPException(status_code=404, detail="Index is empty")
 
 
-@app.post(
+@app.delete(
     path="/delete-documents",
     status_code=status.HTTP_200_OK,
-    tags=["documents", "modify"],
+    tags=["modify"],
 )
 def delete_documents(ids: Union[list[str], None] = None):
     if _haystack.document_store.get_document_count() != 0:

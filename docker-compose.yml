@@ -2,18 +2,12 @@ version: "3.8"
 
 services:
   api:
-    build:
-      dockerfile: build/docker/api/Dockerfile
-      context: ./
-    image: api:latest
+    image: kam2897/search-api:latest
     ports:
       - "8000:8000"
 
   ui:
-    build:
-      dockerfile: build/docker/ui/Dockerfile
-      context: ./
-    image: ui:latest
+    image: kam2897/search-ui:latest
     ports:
       - "8501:8501"
     environment:
