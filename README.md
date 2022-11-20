@@ -45,8 +45,25 @@ Once the services have finished initializing, you can head on over to [127.0.0.1
 To start the services independent of one another, you can run each command in a separate terminal:
 
 ```bash
-make docker-streamlit
-make docker-api
+make docker-run-ui
+make docker-run-api
+```
+
+To build the images locally, run:
+
+```bash
+# build both images
+make docker-build
+
+# build individually
+make docker-build-ui
+make docker-build-api
+
+# build using docker compose
+docker-compose -f docker-compose-dev.yml build
+
+# build and run
+docker-compose -f docker-compose-dev.yml up --build
 ```
 
 Note: If the docker images do not already exist on your system, they will be built automatically. This process can take some time.
