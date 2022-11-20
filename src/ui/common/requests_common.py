@@ -24,8 +24,8 @@ class Request:
                 logger.debug(
                     f"{r.url} | {r.request.method} | {r.status_code} {r.reason}"
                 )
-        except Exception:
-            logger.debug(f"{r.url} | {r.request.method} | {r.status_code} {r.reason}")
+        except Exception as e:
+            logger.error(e)
             st.error(
                 "Hmm..it looks like the API is offline. Try again or check back later."
             )
@@ -46,8 +46,8 @@ class Request:
                 logger.debug(
                     f"{r.url} | {r.request.method} | {r.status_code} {r.reason}"
                 )
-        except Exception:
-            logger.debug(f"{r.url} | {r.request.method} | {r.status_code} {r.reason}")
+        except Exception as e:
+            logger.error(e)
             st.error(
                 "Hmm..it looks like the API is offline. Try again or check back later."
             )

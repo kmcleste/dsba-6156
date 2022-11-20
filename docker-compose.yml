@@ -5,7 +5,7 @@ services:
     build:
       dockerfile: build/docker/api/Dockerfile
       context: ./
-    image: api:latest
+    image: kam2897/search-api:latest
     ports:
       - "8000:8000"
 
@@ -13,7 +13,7 @@ services:
     build:
       dockerfile: build/docker/ui/Dockerfile
       context: ./
-    image: ui:latest
+    image: kam2897/search-ui:latest
     ports:
       - "8501:8501"
     environment:
