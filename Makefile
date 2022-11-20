@@ -1,5 +1,5 @@
 pip-install:
-	python3 -m pip install -r build/requirements.txt
+	python3 -m pip install -r requirements.txt
 	pre-commit install
 
 ui-build:
