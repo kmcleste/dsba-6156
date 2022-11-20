@@ -27,5 +27,7 @@ jobs:
         IMAGE: ${{ github.event.repository.name }}
         TAG: "latest"
       run: |
-        docker build --tag ghcr.io/$USERNAME/$IMAGE:$TAG -f build/docker/Dockerfile .
-        docker push ghcr.io/$USERNAME/$IMAGE:$TAG
+        docker build --tag ghcr.io/$USERNAME/search-ui:$TAG -f build/docker/ui/Dockerfile .
+        docker push ghcr.io/$USERNAME/search-ui:$TAG
+        docker build --tag ghcr.io/$USERNAME/search-api:$TAG -f build/docker/api/Dockerfile .
+        docker push ghcr.io/$USERNAME/search-api:$TAG
