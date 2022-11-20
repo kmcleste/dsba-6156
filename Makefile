@@ -8,7 +8,7 @@ docker-build-ui:
 docker-build-api:
 	docker build -t search-api:latest -f build/docker/api/Dockerfile .
 
-docker-build: ui-build api-build
+docker-build: docker-build-ui docker-build-api
 
 black:
 	black .
