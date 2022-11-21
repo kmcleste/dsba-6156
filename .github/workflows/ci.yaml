@@ -1,12 +1,11 @@
 name: Deploy
 
 on:
-  pull_request:
+  release:
     branches: [ "main" ]
 
 jobs:
   publish-ghcr:
-    if: "contains(github.event.head_commit.message, '#publish')"
     runs-on: ubuntu-latest
 
     steps:
