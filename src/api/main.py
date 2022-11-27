@@ -1,13 +1,12 @@
 import os
 import pathlib
-from typing import Union
 
 from fastapi import FastAPI, status, File, UploadFile, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
 
 from models import (
-    Answer,
+    ExtractedAnswer,
     Query,
     Files,
     Index,
@@ -70,6 +69,7 @@ async def health():
     path="/search",
     status_code=status.HTTP_200_OK,
     tags=["search"],
+    response_model=ExtractedAnswer,
     responses={404: {"model": HTTPError, "description": "Empty Index"}},
 )
 def search(query: Query):
@@ -186,8 +186,8 @@ def describe_documents_():
     status_code=status.HTTP_200_OK,
     tags=["modify"],
 )
-def delete_documents(ids: Union[list[str], None] = None):
+def delete_documents(ids: DocumentsID):
     if _haystack.document_store.get_document_count() != 0:
-        return _haystack.delete_documents(ids=ids)
+        return _haystack.delete_documents(ids=ids.document_ids)
     else:
         raise HTTPException(status_code=404, detail="Index is empty")

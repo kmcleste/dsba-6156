@@ -2,12 +2,12 @@ version: "3.8"
 
 services:
   api:
-    image: kam2897/search-api:latest
+    image: ghcr.io/kmcleste/search-api:latest
     ports:
       - "8000:8000"
 
   ui:
-    image: kam2897/search-ui:latest
+    image: ghcr.io/kmcleste/search-ui:latest
     ports:
       - "8501:8501"
     environment:

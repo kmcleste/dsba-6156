@@ -52,3 +52,25 @@ class Request:
                 "Hmm..it looks like the API is offline. Try again or check back later."
             )
             st.stop()
+
+    @classmethod
+    def delete(cls, endpoint: str, **kwargs):
+        try:
+            r: requests.Response = requests.delete(
+                url=cls.API_BASE_URL + endpoint, **kwargs
+            )
+            if r.ok:
+                logger.debug(
+                    f"{r.url} | {r.request.method} | {r.status_code} {r.reason}"
+                )
+                return r
+            else:
+                logger.debug(
+                    f"{r.url} | {r.request.method} | {r.status_code} {r.reason}"
+                )
+        except Exception as e:
+            logger.error(e)
+            st.error(
+                "Hmm..it looks like the API is offline. Try again or check back later."
+            )
+            st.stop()

@@ -32,6 +32,9 @@ class HaystackHelper:
         self.reader: BaseReader = self.create_reader()
         self.data_path = pathlib.Path(os.getcwd(), "src", "api", "data")
 
+        if not self.data_path.exists():
+            os.mkdir(self.data_path)
+
     def create_document_store(
         self,
         sql_url: str = "sqlite:///faiss_document_store.db",
@@ -240,7 +243,7 @@ class HaystackHelper:
                 reader=self.reader, retriever=self.retriever
             )
             answer: dict = pipeline.run(query=query, params=params, debug=debug)
-            return answer["answers"]
+            return answer
         except Exception as e:
             logger.error(f"Unable to perform extractive search: {e}")
             return {

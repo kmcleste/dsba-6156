@@ -1,16 +1,19 @@
 from typing import Union
 
+from haystack import Answer
 from pydantic import BaseModel
 
 
 class Query(BaseModel):
     query: str = "What is the meaning of life?"
-    params: Union[dict, None] = {"top_k": 10}
+    params: Union[dict, None] = {"Retriever": {"top_k": 10}}
     debug: Union[bool, None] = False
 
 
-class Answer(BaseModel):
-    answer: list[dict]
+class ExtractedAnswer(BaseModel):
+    query: str
+    no_ans_gap: float
+    answers: list[Answer]
 
 
 class Files(BaseModel):
@@ -26,7 +29,7 @@ class Documents(BaseModel):
 
 
 class DocumentsID(Index):
-    document_ids: list[str]
+    document_ids: Union[list[str], None]
 
 
 class Summary(BaseModel):

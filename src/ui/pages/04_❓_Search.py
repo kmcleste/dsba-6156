@@ -14,11 +14,22 @@ def main():
     st.markdown("# Search")
 
     with st.form(key="query-form"):
-        query: str = st.text_input(
+        st.text_input(
             label="Query", key="query", placeholder="Enter a full sentence question"
         )
 
-        search_kwargs: dict = {"json": {"query": query, "params": {}, "debug": True}}
+        search_kwargs: dict = {
+            "json": {
+                "query": st.session_state.get("query"),
+                "params": {
+                    # number of documents to return
+                    "Retriever": {"top_k": 5},
+                    # number of answers to extract from a single doc
+                    "Reader": {"top_k": 10},
+                },
+                "debug": True,
+            }
+        }
 
         submit = st.form_submit_button(label="Search")
 
@@ -26,12 +37,12 @@ def main():
             with st.spinner(text="🧠 Performing neural search..."):
                 r: requests.Response = Request.post(endpoint="/search", **search_kwargs)
             if r is not None:
-                if not isinstance(r.json(), list):
-                    st.json(r.json())
-                else:
-                    df: pd.DataFrame = pd.DataFrame(r.json())
-                    df = df[["answer", "score", "context", "document_id"]]
+                if "answers" in r.json():
+                    df: pd.DataFrame = pd.DataFrame([x for x in r.json()["answers"]])
+                    df = df[["answer", "score", "context", "document_id", "meta"]]
                     st.dataframe(df)
+                else:
+                    st.json(r.json())
             else:
                 st.info("Index is empty")
 
