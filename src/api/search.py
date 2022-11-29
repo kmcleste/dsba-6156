@@ -16,20 +16,33 @@ from haystack.nodes import (
     BaseRetriever,
     BaseReader,
     FARMReader,
+    BaseGenerator,
+    QuestionGenerator,
 )
-from haystack.pipelines import ExtractiveQAPipeline, BaseStandardPipeline
+from haystack.pipelines import (
+    ExtractiveQAPipeline,
+    BaseStandardPipeline,
+    DocumentSearchPipeline,
+    MostSimilarDocumentsPipeline,
+    SearchSummarizationPipeline,
+    QuestionGenerationPipeline,
+    QuestionAnswerGenerationPipeline,
+)
 from haystack.utils import convert_files_to_docs
 import torch
 
 from utils.logger import logger
 
 
+# TODO: Update documentation - at least need docs for class
 class HaystackHelper:
     def __init__(self, index: str):
         self.index: str = index
         self.document_store: BaseDocumentStore = self.create_document_store()
         self.retriever: BaseRetriever = self.create_retriever()
         self.reader: BaseReader = self.create_reader()
+        self.question_generator: BaseGenerator = self.create_question_generator()
+        self.summarizer: BaseSummarizer = self.create_summarizer()
         self.data_path = pathlib.Path(os.getcwd(), "src", "api", "data")
 
         if not self.data_path.exists():
@@ -60,13 +73,13 @@ class HaystackHelper:
                 pathlib.Path(os.getcwd(), "faiss_document_store.db").exists()
                 and pathlib.Path(os.getcwd(), "faiss_document_store.json").exists()
             ):
-                document_store = FAISSDocumentStore.load(
+                document_store: BaseDocumentStore = FAISSDocumentStore.load(
                     index_path="faiss_document_store"
                 )
                 logger.debug("Loaded existing FAISS Document Store")
                 return document_store
             else:
-                document_store = FAISSDocumentStore(
+                document_store: BaseDocumentStore = FAISSDocumentStore(
                     sql_url=sql_url,
                     embedding_dim=embedding_dim,
                     faiss_index_factory_str=faiss_index_factory_str,
@@ -109,7 +122,7 @@ class HaystackHelper:
         embed_title: bool = True,
         use_fast_tokenizers: bool = True,
         similarity_function: str = "dot_product",
-        global_loss_buffer_size: int = 150000,
+        global_loss_buffer_size: int = 150_000,
         progress_bar: bool = True,
         devices: Optional[list[Union[str, torch.device]]] = None,
         use_auth_token: Optional[Union[str, bool]] = None,
@@ -235,7 +248,20 @@ class HaystackHelper:
             logger.critical(f"Unable to create FARMReader: {exc}")
             sys.exit(1)
 
-    def extractive_search(
+    def create_question_generator(
+        self, model_name_or_path: str = "valhalla/t5-base-e2e-qg", use_gpu: bool = False
+    ) -> BaseGenerator:
+        try:
+            generator: BaseGenerator = QuestionGenerator(
+                model_name_or_path=model_name_or_path, use_gpu=use_gpu
+            )
+            logger.debug("Created Question Generator")
+            return generator
+        except Exception as e:
+            logger.critical(f"Unable to create Question Generator: {e}")
+            sys.exit(1)
+
+    def extractive_qa(
         self, query: str, params: Optional[dict] = None, debug: Optional[bool] = None
     ) -> dict:
         try:
@@ -248,6 +274,93 @@ class HaystackHelper:
             logger.error(f"Unable to perform extractive search: {e}")
             return {
                 "message": "Something went wrong. Unable to perform extractive search."
+            }
+
+    def document_search(
+        self, query: str, params: Optional[dict] = None, debug: Optional[bool] = None
+    ) -> dict:
+        try:
+            pipeline: BaseStandardPipeline = DocumentSearchPipeline(self.retriever)
+            answer: dict = pipeline.run(query=query, params=params, debug=debug)
+            return answer
+        except Exception as e:
+            logger.error(f"Unable to perform document search: {e}")
+            return {
+                "message": "Something went wrong. Unable to perform document search."
+            }
+
+    def search_summarization(
+        self, query: str, params: Optional[dict] = None, debug: Optional[bool] = None
+    ) -> dict:
+        try:
+            pipeline: BaseStandardPipeline = SearchSummarizationPipeline(
+                summarizer=self.summarizer,
+                retriever=self.retriever,
+                generate_single_summary=True,
+            )
+            answer: dict = pipeline.run(query=query, params=params, debug=debug)
+            return answer
+        except Exception as e:
+            logger.error(f"Unable to perform search summarization: {e}")
+            return {
+                "message": "Something went wrong. Unable to perform search summarization."
+            }
+
+    def question_generation(
+        self,
+        ids: list[str],
+        params: Optional[dict] = None,
+        debug: Optional[bool] = None,
+    ) -> dict:
+        try:
+            documents: list[Document] = self.document_store.get_documents_by_id(
+                ids=ids, index=self.index
+            )
+            pipeline: BaseStandardPipeline = QuestionGenerationPipeline(
+                question_generator=self.question_generator
+            )
+            answer: dict = pipeline.run(documents=documents, params=params, debug=debug)
+            return answer
+        except Exception as e:
+            logger.error(f"Unable to perform question generation: {e}")
+            return {
+                "message": "Something went wrong. Unable to perform question generation."
+            }
+
+    def question_answer_generation(
+        self,
+        ids: list[str],
+        params: Optional[dict] = None,
+        debug: Optional[bool] = None,
+    ) -> dict:
+        try:
+            documents: list[Document] = self.document_store.get_documents_by_id(
+                ids=ids, index=self.index
+            )
+            pipeline: BaseStandardPipeline = QuestionAnswerGenerationPipeline(
+                question_generator=self.question_generator, reader=self.reader
+            )
+            answer: dict = pipeline.run(documents=documents, params=params, debug=debug)
+            return answer
+        except Exception as e:
+            logger.error(f"Unable to perform question:answer generation: {e}")
+            return {
+                "message": "Something went wrong. Unable to perform question:answer generation."
+            }
+
+    def most_similar_docs(self, ids: list[str], top_k: int = 5):
+        try:
+            pipeline: BaseStandardPipeline = MostSimilarDocumentsPipeline(
+                self.document_store
+            )
+            answer: list[Document] = pipeline.run(
+                document_ids=ids, index=self.index, top_k=top_k
+            )
+            return answer
+        except Exception as e:
+            logger.error(f"Unable to find most similar documents: {e}")
+            return {
+                "message": "Something went wrong. Unable to find most similar documents."
             }
 
     async def write_files(self, files: list[UploadFile]) -> dict:

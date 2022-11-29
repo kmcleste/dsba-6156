@@ -14,7 +14,7 @@ def main():
     resp = Request.get(endpoint="/health")
 
     if resp:
-        st.markdown("API Status: `healthy`")
+        st.markdown(f"API Status: {resp.status_code}")
 
     st.button(label="Refresh 🔄", help="Click to get updated Search API status")
 
