@@ -55,10 +55,64 @@ def overridden_redoc():
 @app.get(path="/", include_in_schema=False)
 async def root():
     content = """
+        <style>
+        body{
+        background: rgba(0,0,0,0.9);
+        }
+        form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -250px;
+        width: 500px;
+        height: 200px;
+        border: 4px dashed #fff;
+        }
+        form p{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 170px;
+        color: #ffffff;
+        font-family: Arial;
+        }
+        form input{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        opacity: 0;
+        }
+        form button{
+        margin: 0;
+        color: #fff;
+        background: #16a085;
+        border: none;
+        width: 508px;
+        height: 35px;
+        margin-top: -20px;
+        margin-left: -4px;
+        border-radius: 4px;
+        border-bottom: 4px solid #117A60;
+        transition: all .2s ease;
+        outline: none;
+        }
+        form button:hover{
+        background: #149174;
+            color: #0C5645;
+        }
+        form button:active{
+        border:0;
+        }
+        </style>
         <body>
         <form action="/upload-files/" enctype="multipart/form-data" method="post">
-        <input name="files" type="file" multiple>
-        <input type="submit">
+            <input name="files" type="file" multiple>
+            <p>Drag and drop your files</p>
+            <button type="submit">Upload</button>
         </form>
         </body>
     """
@@ -203,7 +257,7 @@ def search_summarization(query: Query):
     path="/question-generation",
     status_code=status.HTTP_200_OK,
     tags=["generation"],
-    response_model=GeneratedQuestions,
+    # response_model=GeneratedQuestions,
     responses={404: {"model": HTTPError, "description": "Empty Index"}},
 )
 def question_generation(input: QuestionGeneration):
@@ -246,7 +300,6 @@ def question_generation(input: QuestionGeneration):
     path="/question-answer-generation",
     status_code=status.HTTP_200_OK,
     tags=["generation"],
-    response_model=QuestionAnswerGeneration,
     responses={404: {"model": HTTPError, "description": "Empty Index"}},
 )
 def question_answer_generation(input: QuestionGeneration):

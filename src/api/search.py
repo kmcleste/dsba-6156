@@ -18,6 +18,8 @@ from haystack.nodes import (
     FARMReader,
     BaseGenerator,
     QuestionGenerator,
+    PreProcessor,
+    BasePreProcessor,
 )
 from haystack.pipelines import (
     ExtractiveQAPipeline,
@@ -28,7 +30,12 @@ from haystack.pipelines import (
     QuestionGenerationPipeline,
     QuestionAnswerGenerationPipeline,
 )
-from haystack.utils import convert_files_to_docs
+from haystack.utils import (
+    convert_files_to_docs,
+    print_answers,
+    print_documents,
+    print_questions,
+)
 import torch
 
 from utils.logger import logger
@@ -396,9 +403,21 @@ class HaystackHelper:
         try:
             if isinstance(documents, pathlib.Path):
                 try:
+                    # convert multiple filetypes to dicts using helper function
                     documents = convert_files_to_docs(
                         dir_path=documents, split_paragraphs=True
                     )
+                    # further process documents by breaking into smaller chunks
+                    processor: BasePreProcessor = PreProcessor(
+                        clean_empty_lines=True,
+                        clean_whitespace=True,
+                        clean_header_footer=True,
+                        split_by="word",
+                        split_length=500,
+                        split_respect_sentence_boundary=True,
+                        split_overlap=0,
+                    )
+                    documents = processor.process(documents)
                 except Exception as exc:
                     logger.error(f"Unable to convert files to proper format: {exc}")
                     return {"message": "Unable to convert files to proper format"}
