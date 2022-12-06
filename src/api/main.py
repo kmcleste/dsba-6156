@@ -1,19 +1,23 @@
 import os
 import pathlib
-from typing import Union
 
 from fastapi import FastAPI, status, File, UploadFile, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
 
 from models import (
-    Answer,
+    ExtractedAnswer,
     Query,
     Files,
     Index,
     Documents,
     DocumentsID,
     Summary,
+    DocumentSearch,
+    SearchSummarization,
+    QuestionGeneration,
+    GeneratedQuestions,
+    QuestionAnswerGeneration,
     HTTPError,
 )
 from search import HaystackHelper
@@ -51,10 +55,64 @@ def overridden_redoc():
 @app.get(path="/", include_in_schema=False)
 async def root():
     content = """
+        <style>
+        body{
+        background: rgba(0,0,0,0.9);
+        }
+        form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -250px;
+        width: 500px;
+        height: 200px;
+        border: 4px dashed #fff;
+        }
+        form p{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 170px;
+        color: #ffffff;
+        font-family: Arial;
+        }
+        form input{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        opacity: 0;
+        }
+        form button{
+        margin: 0;
+        color: #fff;
+        background: #16a085;
+        border: none;
+        width: 508px;
+        height: 35px;
+        margin-top: -20px;
+        margin-left: -4px;
+        border-radius: 4px;
+        border-bottom: 4px solid #117A60;
+        transition: all .2s ease;
+        outline: none;
+        }
+        form button:hover{
+        background: #149174;
+            color: #0C5645;
+        }
+        form button:active{
+        border:0;
+        }
+        </style>
         <body>
         <form action="/upload-files/" enctype="multipart/form-data" method="post">
-        <input name="files" type="file" multiple>
-        <input type="submit">
+            <input name="files" type="file" multiple>
+            <p>Drag and drop your files</p>
+            <button type="submit">Upload</button>
         </form>
         </body>
     """
@@ -67,12 +125,13 @@ async def health():
 
 
 @app.post(
-    path="/search",
+    path="/extractive-qa",
     status_code=status.HTTP_200_OK,
     tags=["search"],
+    response_model=ExtractedAnswer,
     responses={404: {"model": HTTPError, "description": "Empty Index"}},
 )
-def search(query: Query):
+def extractive_qa(query: Query):
     """Query the index using extractive search and return an answer.
 
     **Args**:
@@ -98,7 +157,7 @@ def search(query: Query):
             - document_id (str): unique identifier
     """
     if _haystack.document_store.get_document_count() != 0:
-        return _haystack.extractive_search(
+        return _haystack.extractive_qa(
             query=query.query, params=query.params, debug=query.debug
         )
     else:
@@ -107,6 +166,178 @@ def search(query: Query):
         )
 
 
+# TODO: Update documentation
+@app.post(
+    path="/document-search",
+    status_code=status.HTTP_200_OK,
+    tags=["search"],
+    response_model=DocumentSearch,
+    responses={404: {"model": HTTPError, "description": "Empty Index"}},
+)
+def document_search(query: Query):
+    """Query the index using extractive search and return an answer.
+
+    **Args**:
+
+        query (Query): A dictionary containing:
+
+            - query (str): a natural language question
+
+            - params (dict): additional search parameters, see: INSERT_LINK
+
+            - debug (bool): enable verbose logging, defaults to `false`
+
+    **Returns**:
+
+        Answer: A dictionary containing:
+
+            - answer (str): extracted answer from index
+
+            - score (float): computed relevance score
+
+            - context (str): surrounding document context the answer was found
+
+            - document_id (str): unique identifier
+    """
+    if _haystack.document_store.get_document_count() != 0:
+        return _haystack.document_search(
+            query=query.query, params=query.params, debug=query.debug
+        )
+    else:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Index is empty"
+        )
+
+
+# TODO: Update documentation
+@app.post(
+    path="/search-summarization",
+    status_code=status.HTTP_200_OK,
+    tags=["search"],
+    response_model=SearchSummarization,
+    responses={404: {"model": HTTPError, "description": "Empty Index"}},
+)
+def search_summarization(query: Query):
+    """Query the index using extractive search and return an answer.
+
+    **Args**:
+
+        query (Query): A dictionary containing:
+
+            - query (str): a natural language question
+
+            - params (dict): additional search parameters, see: INSERT_LINK
+
+            - debug (bool): enable verbose logging, defaults to `false`
+
+    **Returns**:
+
+        Answer: A dictionary containing:
+
+            - answer (str): extracted answer from index
+
+            - score (float): computed relevance score
+
+            - context (str): surrounding document context the answer was found
+
+            - document_id (str): unique identifier
+    """
+    if _haystack.document_store.get_document_count() != 0:
+        return _haystack.search_summarization(
+            query=query.query, params=query.params, debug=query.debug
+        )
+    else:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Index is empty"
+        )
+
+
+# TODO: Update documentation
+@app.post(
+    path="/question-generation",
+    status_code=status.HTTP_200_OK,
+    tags=["generation"],
+    # response_model=GeneratedQuestions,
+    responses={404: {"model": HTTPError, "description": "Empty Index"}},
+)
+def question_generation(input: QuestionGeneration):
+    """Query the index using extractive search and return an answer.
+
+    **Args**:
+
+        input (Query): A dictionary containing:
+
+            - ids (list): document id's
+
+            - params (dict): additional search parameters, see: INSERT_LINK
+
+            - debug (bool): enable verbose logging, defaults to `false`
+
+    **Returns**:
+
+        Answer: A dictionary containing:
+
+            - answer (str): extracted answer from index
+
+            - score (float): computed relevance score
+
+            - context (str): surrounding document context the answer was found
+
+            - document_id (str): unique identifier
+    """
+    if _haystack.document_store.get_document_count() != 0:
+        return _haystack.question_generation(
+            ids=input.ids, params=input.params, debug=input.debug
+        )
+    else:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Index is empty"
+        )
+
+
+# TODO: Update documentation
+@app.post(
+    path="/question-answer-generation",
+    status_code=status.HTTP_200_OK,
+    tags=["generation"],
+    responses={404: {"model": HTTPError, "description": "Empty Index"}},
+)
+def question_answer_generation(input: QuestionGeneration):
+    """Query the index using extractive search and return an answer.
+
+    **Args**:
+
+        query (Query): A dictionary containing:
+
+            - query (str): a natural language question
+
+            - params (dict): additional search parameters, see: INSERT_LINK
+
+            - debug (bool): enable verbose logging, defaults to `false`
+
+    **Returns**:
+
+        Answer: A dictionary containing:
+
+            - answer (str): extracted answer from index
+
+            - score (float): computed relevance score
+
+            - context (str): surrounding document context the answer was found
+
+            - document_id (str): unique identifier
+    """
+    if _haystack.document_store.get_document_count() != 0:
+        return _haystack.question_answer_generation(
+            ids=input.ids, params=input.params, debug=input.debug
+        )
+    else:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Index is empty"
+        )
+
+
+# TODO: Update documentation
 @app.post(
     path="/upload-files",
     status_code=status.HTTP_201_CREATED,
@@ -181,13 +412,14 @@ def describe_documents_():
         raise HTTPException(status_code=404, detail="Index is empty")
 
 
+# TODO: Update documentation
 @app.delete(
     path="/delete-documents",
     status_code=status.HTTP_200_OK,
     tags=["modify"],
 )
-def delete_documents(ids: Union[list[str], None] = None):
+def delete_documents(ids: DocumentsID):
     if _haystack.document_store.get_document_count() != 0:
-        return _haystack.delete_documents(ids=ids)
+        return _haystack.delete_documents(ids=ids.document_ids)
     else:
         raise HTTPException(status_code=404, detail="Index is empty")

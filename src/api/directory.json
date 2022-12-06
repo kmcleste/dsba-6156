@@ -1,0 +1,706 @@
+[
+    {
+        "name": "Doug Hague, Ph.D.",
+        "title": "Executive Director",
+        "email": "dhague@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/doug-hague-phd",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Doug%20Faculty%20Stories%20500x500.png?itok=OQVAvHDu",
+        "bio": "As founding Executive Director, Dr. Doug Hague established the vision for the School of Data Science, as well as manages its resources, programs, and serves as the representative to the UNC Charlotte community and external industry partners. Dr. Hague has more than 20 years of experience in global technology. Before joining UNC Charlotte, he served as the Chief Analytics Officer at Bank of America Merchant Services, where he implemented data governance policies and practices for internal and external entities. Prior to Bank of America Merchant Services, he held multiple roles at Bank of America, Sprint, and United Technologies. Dr. Hague earned a bachelor’s degree in Engineering Physics from the University of Tulsa, a master’s degree in System Design and Management from MIT, and a Ph.D in Materials Science and Engineering from Penn State University. "
+    },
+    {
+        "name": "Angela  Berardinelli",
+        "title": "Undergraduate Program Director; Senior Lecturer",
+        "email": "aberardinelli@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/angela-berardinelli",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/angela%20500x500.png?itok=NOOiyjCY",
+        "bio": "Education: Ph.D. Mathematics, University of North TexasCourses Taught: Data and Society DTSC 1301 A&BBiography: \n\tDr. Berardinelli has teaching interests in databases, data science, data structures, algorithms, discrete math (including proof-writing), and theory of computation. Her courses typically include student-centered learning and project-based learning whenever appropriate. She is particularly interested in implementing POGIL (Process- Oriented Guided-Inquiry Learning) in computer science courses. Her current research interests are in word graphs for reflection groups (both pure math and computational problems related to the topic) and in using data science techniques to inform curriculum and career decisions for educators and students, respectively. She has had research in pure mathematics published in the peer-reviewed journals Ars Mathematica Contemporanea and Transactions of the American Mathematical Society. Dr. Berardinelli was instrumental in the creation of the first studio courses for the new undergraduate program."
+    },
+    {
+        "name": "Yaorong  Ge",
+        "title": "Graduate Program Director, Health Informatics and Analytics; Professor",
+        "email": "yge@uncc.edu ",
+        "link": "https://datascience.charlotte.edu/directory/yaorong-ge",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Yaorong%20500x500.png?itok=4eLZmnrp",
+        "bio": "Education: Ph.D. in Computer Science-Medical Imaging, Vanderbilt UniversityCourses Taught: Big Data Design, Storage, and Provenance in Healthcare HCIP 6160, Advanced Health Data Integration HCIP 6393, Introduction to Programming for Health Informatics HCIP 5376Biography: \n\tDr. Yaorong Ge's research focuses on imaging informatics, health informatics and intelligent informatics systems development. He has participated in many research projects funded by National Institutes of Health, has co-founded and managed a health informatics software startup until its acquisition, and has successfully commercialized a number of novel technologies via patent licensing. His recent research interests include human-centered intelligent treatment planning in intensity modulated radiation therapy, machine learning approaches to understanding cardiotoxicity in cancer treatment, dataset knowledge resource development, and social media in health and healthcare."
+    },
+    {
+        "name": "John Tobias",
+        "title": "Sports Analytics Program Director; Lecturer ",
+        "email": "jtobias@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/john-tobias",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Tobias%20500x500.png?itok=nFgmzm9u",
+        "bio": "Education: M.S Sports Management, High Point UniversityCourses Taught: Sports Analytics Practicum ITCS 4010Biography: \n\tJohn Tobias has ten-plus years of experience in sports statistics and analytics. He has a very deep and broad knowledge of analytics across multiple sports. He was one of the first statisticians in the country to implement analytics in the sports television industry, also known as advanced statistics. John creates scripts for broadcasters to help explain to the viewers about sports analytics for the games they cover."
+    },
+    {
+        "name": "SungJune  Park",
+        "title": "Graduate Program Director, Data Science and Business Analytics; Professor",
+        "email": "supark@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/sungjune-park",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Sungjune%20Park.jpg?itok=uhVfRfWV",
+        "bio": "Education: Ph.D. in Management Systems, State University of New York at BuffaloCourses Taught: Business Intelligence and Analytics DSBA 6201Biography: \n\tDr. Sungjune Park has taught a variety of courses in the areas of business analytics, data communications, information security, application development, e-business, and supply chain management. His current research interests include business analytics, information security, digital economy, and supply chain management and his research has appeared in various journals such as Computers & Operations Research, Data & Knowledge Engineering, Decision Sciences, Decision Support Systems, Information Systems Research, Information & Management, International Journal of Production Economics, International Journal of Production Research, Journal of Management Information Systems, and Omega, as well as refereed conference proceedings and edited books."
+    },
+    {
+        "name": "Dongsong Zhang",
+        "title": "Director of Research; Belk College Endowed Chair; Professor",
+        "email": "dzhang15@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/dongsong-zhang",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Zhang%20500.png?itok=zPvo0co-",
+        "bio": "Education: Ph.D. in Management Information Systems, Eller School of Management at the University of ArizonaCourses Taught: Big Data Analytics for Competitive Advantage DSBA 6100Biography: \n\tDr. Dongsong Zhang current research interests include social computing, health IT, mobile HCI, business intelligence, and online communities. Dr. Zhang has published approximately 150 research articles in journals and conference proceedings and has received more than a dozen research grants and awards internationally."
+    },
+    {
+        "name": "Booshra Ahmed",
+        "title": "Senior Vice President, Enterprise Digital Banking - Bank of America ",
+        "email": "bahmed@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/booshra-ahmed",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Booshra%20Ahmed%20500x500.png?itok=UCID_hq-",
+        "bio": "Education: Harvard Business School, EMBACourses Taught: Big Data Analytics for Competitive Advantage DSBA 6100Biography: Booshra Ahmed has over 20 years of leadership and ‘Big 4' consulting experience in all major functional business areas including Digital Marketing, Finance, Technology, HR, and Social Media Marketing.Currently Ms. Ahmed leads overall strategic planning and roadmap execution for Bank’s next generation of digital personal financial management products. Ms. Ahmed serves as a Leadership Council member on the Bank of America Global Diversity & Inclusion team; she also serves on multiple nonprofit boards including Harvard Business School Alumni CC and Charlotte Bilingual Preschool. She is an Associate Graduate Faculty member for the School of Data Science at UNC Charlotte."
+    },
+    {
+        "name": "Bruce  Arrigo",
+        "title": "Professor",
+        "email": "barrigo@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/bruce-arrigo",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Bruce%20Arrigo.jpg?itok=rN3JejID",
+        "bio": "Education: Ph.D. Administration of Justice, Pennsylvania State University; M.A. Psychology, Duquesne University; M.A. Sociology, Duquesne UniversityCourses Taught: NABiography: \n\tDr. Arrigo began his professional career as a community organizer for and social activist on behalf of: (1) the homeless and marginally housed; (2) users of (mental) health services; (3) adult and juvenile ex-offenders; (4) survivors of sexual assault; and (5) abusers of licit/illicit drugs. Professor Arrigo work with these vulnerable and/or victimized constituencies culminated when he directed and implemented the social designing housing strategy for the city of Pittsburgh largest single room occupancy (SRO) facility, Wood St. Commons. His civic engagement in this area also included developing and managing the facility human welfare and social policy agenda. During his Directorship (1987-1990), this agenda addressed the unmet needs of underserved and unserved children, adults, and families."
+    },
+    {
+        "name": "George  Banks",
+        "title": "Associate Professor and Chair of the Department of Management ",
+        "email": "gbanks3@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/george-banks",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/IMG-3562%20%283%29.jpg?itok=EWpX7L-0",
+        "bio": "Education: Ph.D. in ManagementCourses Taught: NABiography:\n\tDr. George Banks has research and teaching interests in leadership and diversity, ethics, strategic human resource management, and research methods and statistics (e.g., data science, open science, meta-analysis). He has more than 60 publications, including journal articles in top-tier outlets, such as Science, Psychological Bulletin, Nature Human Behavior, Journal of Management, and Academy of Management Journal. Since 2019 he has been PI or co-PI on almost $2 million in external grants. He currently serves as a senior associate editor at The Leadership Quarterly. In 2017 Dr. Banks was the recipient of the 2017 Sage Publications/CARMA Early Career Award from the Research Methods Division of the Academy of Management. He has also served as a consult for organizations such as HRinterax, Inc. (Shelton, CT), Human Technology, Inc. (McLean, VA) and federal agencies including the Patent and Trade Office, the Forest Service, and the Missile Defense Agency."
+    },
+    {
+        "name": "Fred  Batista",
+        "title": "Assistant Professor",
+        "email": "fbatist1@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/fred-batista",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Fred%20Batista%20500x500.png?itok=GIVkEbdW",
+        "bio": "Education: Ph.D. and M.A. in Political Science, Vanderbilt University; M.A. in Political Science, Federal University of Minas GeraisCourses Taught: NABiography: \n\tDr. Batista is an Assistant Professor in the Department of Political Science and Public Administration and a member of the Latin American Studies Program and the School of Data Science at UNC Charlotte. His research focuses on voting behavior, public opinion, and political information and misinformation. Specific areas of focus include Brazil and Latin America."
+    },
+    {
+        "name": "Jaya  Bishwal ",
+        "title": "Associate Professor Of Mathematics",
+        "email": "J.Bishwal@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/jaya-bishwal",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/JB%20500x500.png?itok=2RJl6qHa",
+        "bio": "Education: Ph.D. in Statistics, Sambalpur UniversityCourses Taught: NABiography: \n\tDr. Bishwal is an Associate Professor of Mathematics, Statistics and Chair of Mathematical Finance Program Committee. His research interest include: Stochastic Differential Inference (SDI), Mathematical Finance and Financial Econometrics, Stochastic Analysis and Probability, and Mathematical Biology."
+    },
+    {
+        "name": "Cheryl L. Brown",
+        "title": "Political Science and Public Administration Department Chair; Associate Professor ",
+        "email": "cbrown@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/cheryl-l-brown",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Faculty%20website%20pictures%28500%20%C3%97%20500%20px%29%20%281%29_0.png?itok=PPanTfmW",
+        "bio": "Education: Ph.D., Political Science, The University of Michigan, Ann Arbor; M.A., Political Science, The University of MichiganCourses Taught: NABiography: \n\tDr. Brown's current research explores: algorithmic and implicit bias in health disparities and machine learning; data science ethics in scientific misinformation; and blockchains in protecting data privacy and ethics in healthcare of diverse populations and regulatory systems. Her related writings include topics on health biometrics and data protection in China and the United States; China second-generation identification card and RFID technology; protection of genomic privacy data; robotics and deep-sea mining; and socioeconomic and landscape determinants of machine learning. She was selected to join the ethics in computer science working group at the Association for Computing Machinery (ACM) Computer Science Education Conference and attended the ACM Turing Celebration Conference in Chengdu, Sichuan, China in May 2019, which led to the working group joint publication on ethics in computer science education. Dr. Brown is a member of Women in AI; Black in AI, the Data Science Association, Healthcare Information and Management Systems Society (HIMSS); American Public Health Association; and the Health Policy & Policy, Information Technology & Politics, and Science, Technology & Environmental Politics sections of the American Political Science Association."
+    },
+    {
+        "name": "Rick Chakra",
+        "title": "Founder & CEO Armada IQ",
+        "email": "rchakra4@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/rick-chakra",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/RC_Profile%20-%20Rick%20Chakra.jpg?itok=_yV4B3ZD",
+        "bio": "Education: B.S. Applied Mathematics - UNC Charlotte, M.S. Data Science and Business Analytics - UNC Charlotte, Ph.D. Candidate Computing and Informatics - UNC CharlotteCourses Taught: TA for DSBA 6156 (Fall 2021) - Applied Machine LearningBiography: Rick Chakra is the Founder and CEO of Armada IQ, a venture-backed startup building autonomous vehicle assessment and benchmarking tools. Rick's academic research focuses on exploring machine intelligence's boundaries through simulation. Rick was previously a Senior Consultant in Deloitte's Applied AI practice and has experience in solution architecture, computer vision, and machine learning."
+    },
+    {
+        "name": "Duan  Chen",
+        "title": "Associate Professor Of Mathematics",
+        "email": "dchen10@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/duan-chen",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Faculty%20website%20pictures%28500%20%C3%97%20500%20px%29%20%282%29.png?itok=KmFKVhOY",
+        "bio": "Education: Ph.D. in Applied Math, Michigan State University M.S. Huazhong University of Science and TechnologyCourses Taught: NABiography: \n\tDr. Duan Chen is an Associate Professor of the Department of Mathematics and Statistics at UNC CHarlotte. His research interest include: Randomized numerical linear algebra, numerical analysis and its applications in machine learning algorithms, Numerical methods for solving Partial Differential Equations, Modeling and computation of problems in biology: molecular biosciences and cancers, and Modeling and computation of electromagnetic field.Website: https://clas-math.uncc.edu/duan-chen/"
+    },
+    {
+        "name": "Ming  Chen",
+        "title": "Assistant Professor of Marketing",
+        "email": "mchen37@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/ming-chen",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Ming_Chen_web.jpg?itok=qbV0LM_V",
+        "bio": "Education: Ph.D. in Marketing, University of HoustonCourses Taught: Special Topics: Digital Marketing and Analytics DSBA 6010Biography: \n\tDr. Ming Chen's research focuses on using empirical models to examine the drivers of shopping behavior through consumers visual attention at point of purchase. She is also interested in understanding consumers viewership of TV shows or movies and their subsequent behaviors (i.e. viewership of future TV episodes or emotion reactions). Dr. Chen also holds an MBA from Johns Hopkins University."
+    },
+    {
+        "name": "Shi Chen",
+        "title": "Associate Professor",
+        "email": "schen56@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/shi-chen",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/headshot_chen.jpg?itok=ptkW5mDf",
+        "bio": "Education: Ph.D. in Entomology and a Ph.D. in Operations Research from Pennsylvania State UniversityCourses Taught: Introduction to Health Informatics HCIP 6380Biography: \n\tDr. Shi Chen's research interest include how individual, spatial, and temporal heterogeneity determine both environmentally-transmitted and directly-transmitted pathogen transmission dynamics. He also explores how the interaction among these sources of heterogeneity influence the pathogen transmission; multiple transmission pathways (e.g. airborne, waterborne, direct contact-based), and how environmental factors (e.g., temperature, photoperiod, etc) influence insect life history, population dynamics, and vector-borne disease dynamic."
+    },
+    {
+        "name": "Yuting (Tina) Chen, Ph.D.",
+        "title": "Assistant Professor",
+        "email": "ychen106@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/yuting-tina-chen-phd",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Tina%20Chen.jpg?itok=YFruRoa7",
+        "bio": "Doctor of Philosophy, Civil Engineering, University of Toronto, 2017Master of Management, Construction Management, Tongji University, 2012Bachelor of Science, Cost Estimating and Control, Shandong Jianzhu University, 2009 Assistant professor, Department of Engineering Technology and Construction Management, UNCC, 08/2019-presentPostdoctoral fellow, focused on “UAV (drones) + BIM vs. construction safety”, Purdue University, 09/2018-08/2019Postdoctoral fellow, focused on “Benchmarking safety climate of the Ontario construction industry based on evidence from industrial plants”, University of Toronto, 09/2017-08/2018 Data analytics, construction safety, automation/robotics/VR/BIM, organizational and individual resilience vs. construction safety, organizational maturity vs. risk management of projects Note: courses will be updated each semester  Postdoc conference travel grant, Purdue University2018ASCE Construction Research Council Best Paper Award2017Doctor Completion Award, Department of Civil Engineering, University of Toronto2016SGS Conference Travel Grant, University of Toronto2016Fellowship, Department of Civil Engineering, University of Toronto2012-2016Heavy Construction Association of Toronto Graduate Scholarship2014Far East Horizon Scholarship, Tongji University2011Best Undergraduate Thesis Award in Shandong Province, China2009National Scholarship, Ministry of Education, China2007&2008National Motivation Scholarship, Ministry of Education, China2007First-class Scholarship, Shandong Jianzhu University2006-2009 Chen, Y.*, Min, B.C., and Zhang, J. (2019). “Applications of BIM and UAV to Construction Safety.” The 7th International Construction Conference Jointly With the Construction Research Congress (CRC 2019), Montreal, Canada.Nahangi, M., Chen, Y., and McCabe, B. (2019). “Safety-based efficiency evaluation of construction sites using data envelopment analysis (DEA).” Safety science, Vol. 113: 382-388.Chen, Y.*, McCabe, B., and Hyatt, D. (2018). “A resilience safety climate model predicting construction safety performance.” Safety Science, Vol. 109: 434-445.Chen, Y.*, McCabe, B., and Hyatt, D. (2018). “The impact of individual resilience and safety climate on safety performance and psychological stresses of construction workers: a case study in the Ontario construction industry.” Journal of Safety Research, Vol. 61: 167-176.Chen, Y.*, McCabe, B., and Hyatt, D. (2018). “The relationship between individual resilience, interpersonal conflicts at work, safety performance and stresses of construction workers.” Journal of Construction Engineering and Management, Vol. 143(8), 04017042.Jia, G., Chen, Y.*, Xue, X., Chen, J., Cao, J., Tang, K. (2011). “Program management organization maturity integrated model for mega construction programs in China.” International Journal of Project Management, Vol. 29(7): 834-845."
+    },
+    {
+        "name": "Harish Cherukuri",
+        "title": "Mechanical Engineering and Engineering Science Department Chair; Professor",
+        "email": "harish.cherukuri@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/harish-cherukuri",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Harish%20Cherukuri.png?itok=_BT2ep9Y",
+        "bio": "Education: Postdoctoral Research Associate, UNC Charlotte, 1995-96. Ph.D., Theoretical and Applied Mechanics, University of Illinois at Urbana-Champaign, 1995. M.S., Montana State University, Bozeman, MT, 1989. B.Tech., Jawaharlal Nehru Technological University, Hyderabad, India, 1987.Courses Taught:Biography: Mechanical engineering design requirements of renewable energy systems and large component design/manufacture "
+    },
+    {
+        "name": "Tianca  Crocker",
+        "title": "Assistant Professor",
+        "email": "ticrocker@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/tianca-crocker",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Tianca%20Crocker_edit.png?itok=c5OiVjly",
+        "bio": "Education: Ph.D. in Social Work at the University of Texas at AustinCourses Taught: NABiography: \n\tTianca Crocker is a social worker and applied researcher whose work focuses on increasing economic and social inclusion in an increasingly digital world. An assistant professor, Crocker also is a Fellow with the National Digital Inclusion Alliance and formerly served as a NTEN|Google Fiber Digital Inclusion Fellow at Austin Free-Net. She earned a doctorate from the University of Texas at Austin's Steve Hicks School of Social Work with a graduate portfolio distinction in Communication, Information and Cultural Policy. Her research focuses on information and communication technologies (ICT) programs and policies that enable digital equity in low-income communities."
+    },
+    {
+        "name": "Joyce Dalsheim",
+        "title": "Associate Professor",
+        "email": "Joyce.Dalsheim@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/joyce-dalsheim",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Joyce%20Dalsheim.png?itok=b-VfBK1_",
+        "bio": "Education: Ph.D. Anthropology, The New School for Social Research; M.S. Intercultural Communication in Education, University of PennsylvaniaCourses Taught: NABiography: \n\tDr. Joyce Dalsheim is a cultural anthropologist who earned her doctorate at The New School for Social Research in New York. Her work interrogates some of the social and political categories through which everyday life is navigated. It focuses on questions of identity and conflict, religion and the secular, nationalism, citizenship, sovereignty, and colonialism. Looking at the work of historical representations in contemporary conflict, she reconceptualized such conflicts by considering the ways historical events are variously imagined, and how alternatives to history itself might act as a framework for understanding conflict."
+    },
+    {
+        "name": "Wenwen  Dou",
+        "title": "Associate Professor",
+        "email": "wdou1@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/wenwen-dou",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/wenwen%20500x500.png?itok=CW2fUPBd",
+        "bio": "Education: Ph.D. in Computer Science, University of North Carolina at CharlotteCourses Taught: Visual Analytics DSBA 5122 / HCIP 5122Biography: \n\tDr. Wenwen Dou's research focuses on the cutting-edge of Visual Text Analytics, which integrates statistical and machine learning methods with powerful interactive visualization for analyzing large amounts of textual data. The two main threads of her research include social media analysis and science impact analysis. Social media analysis aims to extract insights from massive social media data. Dr. Wenwen Dou also holds an appointment as a Research Assistant Professor in the UNCC's Charlotte Visualization Center."
+    },
+    {
+        "name": "Shaoyin (Sherry) Du",
+        "title": "Assistant Professor",
+        "email": "sdu7@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/shaoyin-sherry-du",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Sherry%20Du.jpg?itok=W0cJ6P44",
+        "bio": "Education: Ph.D. in Marketing, University of RochesterCourses Taught: Strategic Business Analytics DSBA 6276Bio: Dr. Shaoyin Du's research interests are in digital marketing, online platform pricing strategies, policy evaluation, and online consumer behavior. Her research focuses on using quantitative methods, including causal inference with machine learning and structural modeling, to understand consumers’ responses to price transparency, their privacy preferences in online advertising settings, and their online grocery shopping behaviors. One of her research papers, which studies consumer privacy choices in the digital advertising context, was published in Marketing Science and is the winner of the 2021 John D.C. Little Award."
+    },
+    {
+        "name": "Mike  Dulin",
+        "title": "Professor; Director, Academy for Population Health Innovation (APHI)",
+        "email": "mdulin3@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/mike-dulin",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Mike%20Dulin%20500x500.png?itok=pQHgamXm",
+        "bio": "Education: Ph.D. in Neurophysiology at The University of Texas Medical School at Houston; MD in Medicine at The University of Texas Medical School at HoustonCourses Taught: NABiography: \n\tDr. Michael Dulin, MD, is currently the Director of the Academy for Population Health Innovation at UNC Charlotte a collaborative designed to advance community and population health. In addition, he is a Professor within the Carolinas Healthcare Systems Department of Family Medicine; Director of a primary care practice-based research network (MAPPR), and serves as the Chief Medical Officer for Tresata, a predictive analytics and machine learning software company based in Charlotte. Dr. Dulin is a nationally recognized leader in the application of analytics and outcomes research to improve care delivery and advance population health. He has led projects in this domain funded by the Agency for Healthcare Research and Quality, The Robert Wood Johnson Foundation, The Duke Endowment, and NIH. He has been an invited keynote speaker in over 30 national meetings including HIMSS Big Data & Analytics and the American College of Healthcare Executives as well as being featured in the press by Wired Magazine, Frontiers Magazine, Fierce Health, and Harvard Business Review."
+    },
+    {
+        "name": "Jefferson Ellinger",
+        "title": "Associate Professor",
+        "email": "Jefferson@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/jefferson-ellinger",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Jefferson%20Ellinger%20500x500.png?itok=voi7JqEn",
+        "bio": "Education: MS in Architecture from Columbia University in New York CityCourses Taught: NABiography: \n\tJefferson Ellinger is a founding partner of Ellinger/Yehia Design (E/Ye Design) and has built several projects throughout North America and won several international competitions. His work has been featured in multiple international publications, exhibited at the Museum of Modern Art in New York, and was highlighted in his TEDx Talk. He has refined and solidified this position as his research/design practice gained international recognition for using advanced computational techniques for building construction: selected built projects and/or winning entries to several international competitions include W-House, Rose Guest House, Dostyk Business Complex, Ice House, TWICC Composite Cladding, and Vertical Harvest of Jackson Hole."
+    },
+    {
+        "name": "Sunil Erevelles",
+        "title": "Associate Professor of Marketing",
+        "email": "serevell@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/sunil-erevelles",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Sunil%20Erevelles_edit.png?itok=QKYpMUaJ",
+        "bio": "Education: Ph.D. in Marketing, The Ohio State UniversityCourses Taught: Innovation Analytics DSBA 6278Biography: \n\tDr. Sunil Erevelles' work focuses on marketing research, in areas such as consumer marketing, personal selling and sales management, Industrial Marketing Management, Business Ethics, Database Marketing, and Information Technology and Management. His research has been published in various journals including the Journal of Consumer Research, the Journal of Business Research, the Journal of Advertising, the Journal of Personal Selling and Sales Management, Industrial Marketing Management, the Journal of Marketing Management , the Journal of Business Ethics, the Journal of International Consumer Marketing, the Journal of Database Marketing, and the Journal of Information Technology and Management. He served as Chair of the Department of Marketing from 2010-2018 and has won multiple teaching awards including the Pew Teaching Leadership Award, the Grays Teaching Award, and the American Marketing Associations' Teacher of the Year Award."
+    },
+    {
+        "name": " Kosta  Falaggis",
+        "title": "Assistant Professor",
+        "email": "kfalaggi@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/kosta-falaggis",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/basecamp.jpg?itok=MDb-VArP",
+        "bio": "Education: Ph.D. Mechanical Engineering, University of Leeds, UKCourses Taught: MEGR 8174/7174 Engineering Analysis I – Differential Equations; MEGR 8175/7175 Engineering Analysis II – Advanced Linear Algebra; MEGR 2240 Computational Methods for Engineers; MEGR 7090/8090-007 & OPTI 6000/8000-002 Special Topics: Optical Metrology with MatlabBiography:\n\tDr. Falaggis earned his Ph.D. in the area of Multi-Wavelength Interferometry and High Dynamic-Range Sensors at the University of Leeds, UK within the group of Catherine and David Towers (2006-2011). Dr. Falaggis was also a post-doctoral research associate at the Warsaw University of Technology, Poland, where he focused his research on Holography, Phase Retrieval Techniques, and Computational Wave-propagation techniques within the group of Malgorzata Kujawinska (2012-2015). His current research interests are (1) Coherent and Incoherent Optical Measurement and Imaging Techniques (Interferometry, Holography, Phase Retrieval, Deflectometry, Fringe Projection Profilometry, Photogrammetry), (2) Metrology of Freeform Optics and Measurements in Harsh Manufacturing Environments, (3) Computational Methods in Wave-Optics (Wave-Propagation and Diffraction phenomena), and (4) Machine Learning Techniques (Data-Driven and Physics-Guided Methods)."
+    },
+    {
+        "name": "Liyue  Fan",
+        "title": "Assistant Professor",
+        "email": "liyue.fan@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/liyue-fan",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Liyue%20Fan%20500x500.png?itok=NPYLtFm-",
+        "bio": "Education: Ph.D. in Computer Science, Emory UniversityCourses Taught: Big Data Design, Storage, and Provenance DSBA 6160 / HCIP 6160Biography: \n\tDr. Liyue Fan's research is at the intersection of data privacy and spatio-temporal databases. She was named one of the \"Rising Stars in EECS\" by MIT in 2015. Prior to joining UNC Charlotte, Dr. Fan was an Assistant Professor in Information Technology Management at University at Albany. She spent two years as a postdoc research associate in the Integrated Media System Center at University of Southern California, under the supervision of Prof. Cyrus Shahabi. Currently she serves the professional community as a PC member for KDD, ICDM, CIKM, SIGSPATIAL, Big Data Congress, etc., and as a reviewer for many high impact journals, such as TKDE, TIST, TIFS, TMC, DAPD, and Computer & Security."
+    },
+    {
+        "name": "Colby Ford",
+        "title": "Principal Consultant - Tuple, LLC, VP of Technology",
+        "email": "colby.ford@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/colby-ford",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Colby%20Ford_edit.png?itok=cX8PXPQZ",
+        "bio": "Education: Ph.D. in Bioinformatics and Computational Biology, UNC CharlotteCourses Taught: DSBA 6190: Cloud Computing for Data AnalysisBiography: Dr. Colby Ford is the founder of <Tuple>, a Microsoft and Databricks partner consulting firm, and is the co-founder of Amissa, an NIH- and NSF- backed startup working to revolutionize caregiving and research in diseases such as Alzheimer's. He has deep industry experience designing scalable, cloud-based architectures and creating enterprise-grade AI solutions. Additionally, he is active in the technical community, having hosted many training events on Microsoft products such as Microsoft ML Server, Azure Databricks, and Power BI and teaching courses on Machine Learning, High-Performance Computing, and Mathematical Modeling. His research interests primarily focus on Visual Analytics, Machine Learning, Mathematics, and Genomics."
+    },
+    {
+        "name": "Robert Fox",
+        "title": "Head of Data Science - Insight Miner",
+        "email": "rfox12@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/robert-fox",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/robert_fox1.jpg?itok=BL17iqhm",
+        "bio": "Education:  M.S. Advanced Data and Knowledge Discovery, UNC CharlotteCourses Taught: Cloud Computing for Data Analysis DSBA 6190Biography: \n\tRobert Fox has had a long professional career in the financial services sector, where he developed and managed data science teams and solutions. His technical interests include data mining, unsupervised learning, and the integration and automation of machine learning. He's an expert on the pitfalls involved with real-world efforts to drive value with AI; and intimately familiar with risk management and governance practices. He's currently teaching and working on a new commercial startup company: InsightMiner.com. He is an Associate Graduate Faculty member for the School of Data Science at UNC Charlotte."
+    },
+    {
+        "name": "Michael Grabchak",
+        "title": "Associate Professor of Statistics",
+        "email": "mgrabcha@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/michael-grabchak",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Grabchak_0.jpeg?itok=7Ed8vg8w",
+        "bio": "Education: PhD in Statistics, Cornell University; MS in Statistics, Cornell UniversityCourses Taught: NA\n\tDr. Michael Grabchak is an associate professor in the Math Department. His research interests include: Entropy Estimation; Infinitely Divisible Processes; Heavy Tails; and Quantitative Finance. Learn more about Dr. Grabchak, here."
+    },
+    {
+        "name": "Justin  Grandinetti",
+        "title": "Assistant Professor",
+        "email": "jgrandin@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/justin-grandinetti",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Justin%20Grandinetti.jpg?itok=btNbw9WF",
+        "bio": "Education: Ph.D in Communication, Rhetoric, and Digital Media at North Carolina State UniversityCourses Taught: NABiography: \n\tDr. Justin Grandinetti is an assistant professor in the Department of Communication Studies. He earned his PhD in 2019 in North Carolina State University's Communication, Rhetoric, and Digital Media program and graduated from James Madison University in 2015 with his M.A. in Writing, Rhetoric, and Technical Communication. Justin is a critical media studies scholar interested in mobile media. Specifically, Justin's dissertation combines a media archaeological approach with Deleuzian spatial materialism to examine mobile streaming media and the production of space and subjectivity."
+    },
+    {
+        "name": "Laura Gunn",
+        "title": "Associate Professor; Director, CHHS Biostatistics Core",
+        "email": " laura.gunn@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/laura-gunn",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Gunn.Laura_.jpeg?itok=qu3JRbvS",
+        "bio": "Education: Ph.D. in Statistics and Decision Sciences, Duke UniversityCourses Taught: Healthcare Data Analysis HCIP 6102, Problem Solving in Health Analytics HCIP 6250Biography: \n\tDr. Laura Gunn is the Director of Health Analytics for College of Health and Human Services. Dr. Gunn's work as a biostatistical expert is applied, interdisciplinary, and collaborative across areas in public health, healthcare, and medicine. This includes projects that focus on health outcomes research, analysis of big data in population health at a national level in the UK, randomized trials, program evaluation, and community-based participatory research with local partnerships. Dr. Gunn also held a research training fellowship in Biostatistics with the National Institute of Environmental Health Sciences."
+    },
+    {
+        "name": "Xue  Guo",
+        "title": "Assistant Professor",
+        "email": "xguo9@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/xue-guo",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Xue%20Guo%20%20500x500.png?itok=Z_Gx95H4",
+        "bio": "Education: Ph.D. in Management Information Systems, Temple University; MS in Management Information Systems, University of MarylandCourses Taught: Business Intelligence and Analytics DSBA 6201Biography: \n\tDr. Xue Guo research interests include digital labor markets, IT human capital, two-sided online markets, and information privacy. Her research uses a range of methodologies including econometrics, machine learning, text analysis, lab experiment, and Bayesian statistics. Her teaching interests include management information systems, business analytics, database management, and programming, etc."
+    },
+    {
+        "name": "Yuqi  Guo",
+        "title": "Assistant Professor",
+        "email": "yguo16@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/yuqi-guo",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Yuqi%20Guo.png?itok=0dJeeI9z",
+        "bio": "Education: PhD and M.S.W., Social Work, University of AlabamaCourses Taught: NABiography: \n\tDr. Yuqi Guo's program of research is focused on public health management of infectious diseases and chronic diseases among medically underserved populations. Her major research areas include health disparities, cancer prevention, and community health. Dr.Yuqi Guo's goal in this arena is to publish clinical and translational research to help health professionals improve health outcomes and promote health equality. Dr. Guo is currently conducting multiple research projects. She with her research team develops personalized machine learning models for lung cancer early detection. Also, she recently completed three research projects regarding to community prevention of the COVID-19. Dr. Guo has numerous studies working with a transdisciplinary team in the areas of telehealth and chronic disease management including dementia prevention and management and depression in aging."
+    },
+    {
+        "name": "Sabyasachi Gupta (Sabby)",
+        "title": "Adjunct Faculty at UNC Charlotte; Partner - Life Sciences at Apexon",
+        "email": "yguo16@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/sabyasachi-gupta-sabby",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Sabby_photo_____rs.jpg?itok=yHKcwTWA",
+        "bio": "Education: MMCi from Duke UniversityCourses taught: Cloud Computing for Data Analysis - DSBA 6190Biography: Sabyasachi (aka Sabby) Gupta is an entrepreneur who is successfully building startups and leading healthcare strategy consulting engagements.He advises CxOs on business lead digital transformation strategies to enable organic and inorganic growth. Currently he advises various healthcare and life sciences startups and also leads the Healthcare AI & Digital Practice at Genpact.Sabby has a Bachelors degree in Statistics and a Masters in Computers from India and another Masters of Management in Clinical Informatics from the Duke University School of Medicine. He is also an Associate Graduate Faculty member for the School of Data Science at UNC Charlotte. "
+    },
+    {
+        "name": "Mirsad  Hadzikadic",
+        "title": "Complex Systems Institute Director; Professor",
+        "email": "mirsad@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/mirsad-hadzikadic",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Mirsad%20Hadzikadic%20500x500.png?itok=rHgmJsqp",
+        "bio": "Education: Ph.D. in Computer Science, Southern Methodist UniversityCourses Taught: Topics in DSBA: Analytical Storytelling DSBA 6010, Network Science DSBA 6520, Complex Adaptive Systems DSBA 6500, Applied Machine Learning DSBA 6156Biography: \n\tDr. Mirsad Hadzikadic is the Director of the Complex Systems Institute. He was the founding Dean of UNC Charlotte's College of Computing and Informatics, founding Executive Director of Data Science Initiative, and Chair of the Department of Computer Science. Dr. Hadzikadic's research is centered on Complex Adaptive Systems, Simulation and Modeling, Health Informatics, Population Health, Data Mining/Analytics, and Cognitive Science//Neuroeconomics."
+    },
+    {
+        "name": "Travis  Hales",
+        "title": "Assistant Professor; MSW Program Director",
+        "email": "thales@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/travis-hales",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Travis%20Hales_edit.png?itok=jRa3yHZM",
+        "bio": "Education: Ph.D in Philosophy at The University at Buffalo School of Social Work; MS in Social Work at The University at Buffalo School of Social WorkCourses Taught: NABiography: \n\tDr. Travis Hales is an emerging social work scholar at the University of North Carolina Charlotte whose research focuses on building an evidence-base for trauma-informed approaches and examining the relationships among organizational conditions, staff well-being, and therapeutic effectiveness."
+    },
+    {
+        "name": "Katie Hanks",
+        "title": "Workforce Management Analytics Consultant",
+        "email": "khanks3@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/katie-hanks",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Katie%20Hanks_SDSFaculty_Headshot.jpg?itok=kCkoTxBx",
+        "bio": "Education: MS Business Analytics, Syracuse University; BA American History, University of San FranciscoBiography: Katie grew up on the Canadian border in Northern New York, where the closest major city is Ottawa. She previously worked for Chewy.com in Pricing Analytics and is currently an Analytics Consultant in Workforce Management for Lowe's. Katie is married, and she and her husband adore their four adorable little dogs. She also appreciates a great cup of coffee!"
+    },
+    {
+        "name": "Xiuli He",
+        "title": "Professor of Operations Management",
+        "email": "xhe8@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/xiuli-he",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Xiuli%20He_edit.png?itok=-eAGi6i8",
+        "bio": "Education: Ph.D. in Operations and Supply Chain Management, University of Texas at AustinCourses Taught: Supply Chain Management DSBA 6208Biography: \n\tDr. Xiuli He's research interests include supply chain management and other areas such as marketing, finance, and economics. Dr. He's research has been published in Production and Operations Management, Decision Sciences Journal, Omega, European Journal of Operational Research, International Journal of Production Economics, International Journal of Production Research, Operations Research Letters, and other journals."
+    },
+    {
+        "name": "Gordon  Hull",
+        "title": "Center for Professional and Applied Ethics Director; Professor",
+        "email": "ghull@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/gordon-hull",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Gordon%20Hull%20500x500.png?itok=31hvX6Hk",
+        "bio": "Education: Ph.D. in Philosophy, Vanderbilt UniversityCourses Taught: Big Data Ethics DSBA 6115Biography: \n\tDr. Gordon Hull is the Director of the Center for Professional and Applied Ethics. His research primarily focuses on moral and political philosophy, particularly in problems that emerge at the intersection of philosophy, law, and technology - such as those involving intellectual property and privacy. He is responsible for the creation of the Big Data Ethics course for the DSBA graduate program."
+    },
+    {
+        "name": "Donald  Jacobs",
+        "title": "Professor",
+        "email": "djacobs1@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/donald-jacobs",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/JacobsPicHat.jpg?itok=jIWc51JP",
+        "bio": "Education: B.S. and PhD, PhysicsCourses Taught: NABiography:\n\tDr. Jacobs' research expertise spans the areas of Computational/Statistical Physics, Condensed Matter, Molecular Biophysics, Structural Biology, Computational Biology, Econophysics, modeling and optimization of algorithms. His research is saliently described as modeling and analyzing complex systems with the goal to understand, predict and control their emergent properties. With over 100 publications, he has made contributions in the areas of diffusion in disordered media, where fractal spatial correlations induce anomalous long-time correlated behavior, cellular automata and Boltzmann lattice gas models for fluid dynamics, graph-rigidity theory applied to covalent glass networks that elucidates self-organizing dynamics, fast computational models for protein thermodynamic stability, prediction of allosteric effects in proteins, peptide design, and developed a novel holistic income tax system. His data science contributions include accurate probability density estimation suitable for high throughput analysis using non-parametric models, novel projection pursuit machine learning methods for discriminate analysis, predicting protein coding regions in DNA sequences, and discriminate analysis of EEG signals. Dr. Jacobs is currently developing new combinatorial optimization algorithms for quantum computing. Most recently, Dr. Jacobs is interested in understanding cognitive thinking and the learning process of a system by connecting models of human thought to artificial intelligence, quantifying perception, modeling emotion, and simulating collective human behavior under different social-economic conditions to guide public policy through quantitative analysis. "
+    },
+    {
+        "name": "Nima Yahyapour  Jalali",
+        "title": "Assistant Professor of Marketing",
+        "email": "nyahyapo@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/nima-yahyapour-jalali",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Nima%20Jalali-edit.png?itok=dR11fNDj",
+        "bio": "Education: Ph.D. in Marketing Science and Quantitative Methods, University of Wisconsin-MilwaukeeCourses Taught: Social Media Marketing and Analytics DSBA 6277, Mobile Marketing and Analytics DSBA 6283Biography: \n\tDr. Nima Jalali's primary research interests include social media and digital marketing. He utilizes statistical modeling to gain marketing insights from customer's online activities, which assists in brands enhancing their social media and digital strategies and tactics. His research has appeared in the International Journal of Research in Marketing, Quantitative Marketing and Economics, Econometrics Reviews, and Journal of Multivariate Analysis. His recent work looked at the role of topic word composition in tweet on retweets, the effect of color composition on click-rates in visual commerce, and the role of peripheral cues on product page visits and conversion from visual user-generated content."
+    },
+    {
+        "name": "Jiancheng  Jiang",
+        "title": "Professor of Statistics",
+        "email": "jjiang1@uncc.edu ",
+        "link": "https://datascience.charlotte.edu/directory/jiancheng-jiang",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Jiancheng%20Jiang_Edit.png?itok=0gIdR6Q4",
+        "bio": "Education: Ph.D. in StatisticsCourses Taught: NABiography: \n\tDr. Jiancheng Jiang's areas of research include: Financial Econometrics, Semi- and Nonparametric Modeling, Regression Diagnostics, Robustness, Survival Analysis"
+    },
+    {
+        "name": "Monica Surinder Johar",
+        "title": "Professor of Management Information Systems",
+        "email": "msjohar@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/monica-surinder-johar",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Monica-Johar_Web-2019.jpg?itok=qTxEW0PR",
+        "bio": "Education: Ph.D. Management Information Systems, University of Texas at Dallas; M.S. Management Information Systems, University of Texas at DallasCourses Taught: Business Intelligence and Analytics DSBA 6201Biography: \n\tDr. Monica Johar's research interests include optimal software development methodologies, content delivery systems, web personalization, and business data communication.She is an active member of the Association of Information Systems and INFORMS. Her teaching interests include management information systems, database management and business data communication."
+    },
+    {
+        "name": "Siddharth  Krishnan",
+        "title": "Assistant Professor",
+        "email": "siddharth.krishnan@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/siddharth-krishnan",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Siddharth%20Krishnan%20500x500.png?itok=wy7OoP37",
+        "bio": "Education: Ph.D. in Computer Science, Virginia TechCourses Taught: Applied Machine Learning DSBA 6156, Network Science DSBA 6520Biography: \n\tDr. Siddharth Krishnan's research interests are in web-mining, data analytics, computational social science, and applied machine learning with a primary emphasis on analyzing, characterizing, and forecasting information dynamics on social media. His research aims to leverage dynamical processes to build explanatory and predictive models of actions of large groups of people and societies. Dr. Krishnan's research has been published in several data science venues like WSDM, WebSci, AAAI, and TKDD."
+    },
+    {
+        "name": "Jake Minwoo  Lee",
+        "title": "Assistant Professor",
+        "email": "mlee173@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/jake-minwoo-lee",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Jake%20Lee%20500x500.png?itok=8xBk-cmq",
+        "bio": "Education: Ph.D. in computer science at Colorado State UniversityCourses Taught: NABiography: \n\tDr. Minwoo Lee is a professor in the Department of Computer Science, University of North Carolina Charlotte (UNCC). He is working on machine learning algorithms for reinforcement learning. His interests focus on various topics in machine learning, with an emphasis on reinforcement learning, such as interpretational learning, transfer learning, sparse learning, multiagent learning, fine control based policy development and robust knowledge augmentation. Recent research focuses on analysis of learning behavior with sparse Bayesian learning."
+    },
+    {
+        "name": "Shaoyu Li",
+        "title": "Associate Professor of Statistics",
+        "email": "sli23@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/shaoyu-li",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Shaoyu%20Li.png?itok=CS9-iubk",
+        "bio": "Education: Ph.D. in Statistics and Quantitative Biology, Michigan State University; M.S. in Statistics, Huazhong University of Science and TechnologyCourses Taught: NABiography: \n\tDr. Li is an Assistant Professor in the Department of Mathematics and Statistics at University of North Carolina at Charlotte. She obtained her Ph.D. degree in Statistics and Quantitative Biology at Michigan State University in East Lansing, MI. Dr. Li's main research area is statistical genetics and genomics. Her current research focus is developing statistical and computational methodologies to quantify the proportion of cellular compositional effects in the total variation of bulk tissue gene expression, and understand cell-type specific transcriptional changes that are associated with human diseases. She is also interested in novel statistical design and analysis methods for mobile Health studies."
+    },
+    {
+        "name": "Angela  Liu",
+        "title": "Associate Professor",
+        "email": "xliu44@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/angela-liu",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Xia-Liu_Web-2019.jpg?itok=pZnd2VEW",
+        "bio": "Education: Ph.D. Business Administration, Syracuse University; M.S. Statistics and Education, Syracuse University; M.A. Philosophy, Beijing Normal UniversityCourses Taught: Consumer Analytics DSBA 6276Biography: \n\tDr. Angela Xia Liu joined the Belk College marketing faculty in 2019. Prior to joining UNC Charlotte, she was appointed as Associate Professor of Marketing at Tsinghua University, and has been appointed a research scholar at Sloan School of Management at MIT and Tepper School of Management at Carnegie Mellon University. Her research interests include business analytics, marketing strategies, entertainment marketing, Social Media and Digital Marketing and marketing-finance interface. She has published on Management Science, Journal of Marketing, Journal of Marketing Research, MIS Quarterly and many other top-tier marketing and business journals."
+    },
+    {
+        "name": "Tim Lowe",
+        "title": "Director, Research Services - Premier",
+        "email": "tlowe13@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/tim-lowe",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Lowe_Timothy_edit.png?itok=tOALYkHA",
+        "bio": "Education: Ph.D in Health Services Research/ Health Policy at Rutgers University; MSW in Health Administration/ Gerontology at Rutgers University -New BrunswickCourses Taught: Intermediate Decision Analysis in Healthcare HCIP 6108Biography: \n\tTimothy Lowe, PhD, is Director, Research Services, Premier, Inc., Charlotte, NC. Dr. Lowe has over 20 years'experience in healthcare analytics and project management for state, federal and private sector clients. He is the inventor of Premier's Waste Index, co-inventor of Premier's associated Waste Measures, and the author of over 40 peer-reviewed publications and conference presentations. Dr. Lowe is an acknowledged expert in the field of healthcare overutilization and efficiency and leads Premier's research and development efforts in the identification, measurement and evaluation of health system inefficiencies. Prior to joining Premier, Dr. Lowe was a Senior Scientist with Carolinas HealthCare System, Charlotte, NC, where he submitted the winning proposal for the Ernest Amory Codman Award for excellence in quality improvement measurement from The Joint Commission. Earlier, Dr. Lowe was a Research Scientist with the New Jersey Department of Health and Senior Services, Trenton, NJ, where he developed the statewide Patient Safety Reporting System for New Jersey hospitals. He is currently an Associate Graduate Faculty member for the School of Data Science at UNC Charlotte."
+    },
+    {
+        "name": "Stephanie Moller",
+        "title": "Professor; Public Policy Doctoral Program Director",
+        "email": "smoller@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/stephanie-moller",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Steaphanie%20Moller.png?itok=Of3nZO_V",
+        "bio": "Education: Ph.D. in Sociology, UNC Chapel HillCourses Taught: Data and Society A DTSC 1301, Data and Society B DTSC 1302Biography: \n\tDr. Stephanie Moller conducts research on income inequality within the United States and cross-nationally. She also conducts research on mathematics achievement in primary and secondary schools, examining racial, ethnic and socio-economic gaps in achievement. Dr. Moller has published numerous articles, including articles in the American Sociological Review, American Journal of Sociology, Social Forces, Social Science Research, Sociology of Education, and World Politics. She has received funding from the National Science Foundation, the Spencer Foundation, and the U.S. Department of Education. She is a previous member of the Editorial Board of the American Sociological Review and the current Editor of Social Science Research."
+    },
+    {
+        "name": "Michael Moore",
+        "title": "Executive Director of Academic Technology",
+        "email": "michael.moore@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/michael-moore",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Profile.PNG?itok=-RI6TtuJ",
+        "bio": "Education: Ph.D. in Instructional Design and Technology, Virginia TechCourses Taught: Health Information Privacy and Security: Law, Ethics, and Technology HCIP 6201Biography: \n\tDr. Michael Moore is the interim Executive Director of Digital Strategies for Colleges. He is also Executive Director of Academic Technology within the College of Health and Human Services. Dr. Moore supports faculty in the integration of technologies such as patient simulations into both teaching and research. As a part of CHHS Research teams, Dr. Moore has collaborated on projects involving HIV Prevention, International Social Work Education, and Web-based Health Interventions. Other research interests of his include the measurement of cognitive styles among adult learners and the use of emerging display technologies in preparing students for careers in health and human services."
+    },
+    {
+        "name": "Nadia Abusaymeh  Najjar",
+        "title": "Teaching Associate Professor",
+        "email": "nanajjar@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/nadia-abusaymeh-najjar",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Najjar-LO.jpeg?itok=mOhoF8Cc",
+        "bio": "Education: Ph.D. and M.S. in Computing and Informatics, UNC CharlotteCourses Taught: Introduction to Programming for Health Informatics HCIP 5376Biography: \n\tDr. Nadia A. Najjar is a Teaching Associate Professor at UNC Charlotte. Her research focuses on personalization and recommender systems. Her projects cross the fields of recommender systems, decision-support systems, artificial intelligence and human-computer interaction. Her recent research focuses on personalized adaptive learning."
+    },
+    {
+        "name": "D. Blaine Nashold, Jr.",
+        "title": "Director, Enterprise Transformation at Grant Thornton",
+        "email": "dnashold@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/d-blaine-nashold-jr",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Nashold%20-%20Daryl%20Nashold.jpg?itok=wrbepwrl",
+        "bio": "Education: DBA, University of North Carolina at Charlotte; MBA, BA/BS University of DelawareCourses Taught: DSBA 6100: Big Data Analytics for Competitive AdvantageBiography:\n\tDr. D. Blaine Nashold, Jr. is an Associate Graduate Faculty member at the UNC Charlotte School of Data Science where he specializes in big data analytics for competitive advantage.  Dr. Nashold has also taught courses in Management Information Systems and Operations Management.  Additional teaching and research interests include financial technology (fintech), technology adoption, and data science with a specialty in artificial intelligence (AI). Dr. Nashold is currently a Director with Grant Thornton’s Enterprise Transformation practice, a technology/operations/product innovation organization that democratizes innovation by putting the power of new and emerging technology into the hands of each Grant Thornton professional, to solve business problems and needs for clients and internal colleagues.  Prior, he was a Senior Vice President within Bank of America’s Global Technology and Operations group, serving in various roles including technology strategy, governance, operations, service delivery, and third-party management.Read More"
+    },
+    {
+        "name": "Irina Nesmelova",
+        "title": "Professor",
+        "email": "irina.nesmelova@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/irina-nesmelova",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Irina%20Nesmelova.jpg?itok=3poHv3Bd",
+        "bio": "Faculty Web SItePh.D. Physics and Mathematics, Kazan State University, Russia"
+    },
+    {
+        "name": "Xi (Sunshine)  Niu",
+        "title": "Associate Professor",
+        "email": "xniu2@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/xi-sunshine-niu",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Sunshine%20500x500.png?itok=Ry3iE-7s",
+        "bio": "Education: Ph.D. in Information Science, University of North Carolina at Chapel HillCourses Taught: Knowledge Discovery in Databases DSBA 6162 / HCIP 6162, Internship Practicum DSBA 6400Biography: \n\tDr. Niu has published many refereed research papers in top journals and conferences and has also won several grants and awards from different sources including NSF. Dr. Niu's research is at the intersection of data and text analytics, knowledge discovery, search behavior, and interactive information retrieval. Her recent projects include text mining for serendipitous recommendation, transaction log analysis of e-commerce websites, analyzing user-generated contents, and analyzing online user behavior to generate insights about user experience."
+    },
+    {
+        "name": "Yinghao Pan",
+        "title": "Assistant Professor of Statistics",
+        "email": "ypan8@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/yinghao-pan",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Yinghao_Pan_square.jpg?itok=Rpy_fMTb",
+        "bio": "Education: Ph.D. in Biostatistics, the University of North Carolina at Chapel HillCourses Taught: NABiography:\nDr. Pan is an Assistant Professor in the Department of Mathematics and Statistics at the University of North Carolina at Charlotte. He obtained his Ph.D. degree in Biostatistics at the University of North Carolina at Chapel Hill. His research interests include machine learning, personalized medicine, survival analysis, semiparametric modeling, causal inference. "
+    },
+    {
+        "name": "Albert  Park",
+        "title": "Assistant Professor",
+        "email": "al.park@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/albert-park",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Albert%20Park%20%20500x500.png?itok=fi8d_s7q",
+        "bio": "Education: Ph.D. in Biomedical and Health Informatics, University of WashingtonCourses Taught: Big Data Design, Storage, and Provenance in Healthcare DSBA/HCIP 6160, Advanced Health Data Integration HCIP 6393, Introduction to Programming for Health Informatics HCIP 5376Biography: \n\tDr. Albert Park's research interests include: social computing, group-health informatics, human-centered design, personal (consumer) health informatics, online communication, collaborative health technology, patient-provider interaction, peer support, patient-reported outcomes, and patient-generated data. His research primarily focuses on the analysis of social interactions and social networks using modern data analysis and development of novel computational approaches to study social interactions and relationships in the context of health. Prior to working with UNC Charlotte, he was a National Institutes of Health-National Library of Medicine Postdoctoral Fellow at the University of Utah."
+    },
+    {
+        "name": "Rajib  Paul",
+        "title": "Associate Professor",
+        "email": "rpaul9@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/rajib-paul",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/headshot_paul.jpeg?itok=yRyZQZd_",
+        "bio": "Education: Ph.D. in Statistics, Ohio State UniversityCourses Taught: Decision Analysis in Health Care HADM 6108Biography: \n\tDr. Rajib Paul joined UNC Charlotte from Western Michigan University, where he was an Associate Professor of Statistics. He also serves as an Associate Editor for the Journal of Statistical Computation and Simulation. Dr. Paul's research focuses on Spatial Statistics and its applications in Epidemiology and the environment."
+    },
+    {
+        "name": "Stephanie F Pilkington, Ph.D.",
+        "title": "Assistant Professor",
+        "email": "spilking@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/stephanie-f-pilkington-phd",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Stephanie%20Pilkington.jpg?itok=iODbi_nk",
+        "bio": ""
+    },
+    {
+        "name": "Andrea Pitts",
+        "title": "Associate Professor; Philosophy Department Graduate Program Director",
+        "email": "apitts5@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/andrea-pitts",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Pitts_Headshot_edit.png?itok=-2_m1Jbd",
+        "bio": "Education: Ph.D. in Philosophy, Vanderbilt University; M.A. in Philosophy, University of South FloridaCourses Taught: NABiography: \n\tAndrea Pitts is an Associate Professor of Philosophy at UNC Charlotte and is affiliate faculty of the university's Department of Africana Studies, Center for Holocaust, Genocide, and Human Rights Studies, Latin American Studies Program, Social Aspects of Health Initiative, and Women and Gender Studies Program. Andrea received their MA at the University of South Florida in philosophy, and PhD in philosophy at Vanderbilt University. Their research interests include Latin American and U.S. Latinx Philosophy, critical philosophy of race, feminist philosophy, and critical prison studies, and they have taught graduate and undergraduate courses over the last five years on topics such as queer migration studies, prison abolitionism, critical transgender politics, and feminist epistemology. Their scholarly articles on topics such as Latinx feminism, post-revolutionary Mexican philosophy, and the politics of prison health care can be found in Hypatia: A Journal of Feminist Philosophy, Radical Philosophy Review, Genealogy, Inter-American Journal of Philosophy, and IJFAB: International Journal of Feminist Approaches to Bioethics. Andrea is also co-editor of Beyond Bergson: Examining Race and Colonialism through the Writings of Henri Bergson with Mark Westmoreland (SUNY Press 2019) and Theories of the Flesh: Latinx and Latin American Feminisms, Transformation, and Resistance with Mariana Ortega and José M. Medina (Oxford University Press 2020)."
+    },
+    {
+        "name": "Srinivas Pulugurtha, Ph.D., P.E.",
+        "title": "Professor, Research Director",
+        "email": "sspulugurtha@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/srinivas-pulugurtha-phd-pe",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Srinivas%20Pulugurtha.jpg?itok=HqbxvpyF",
+        "bio": " "
+    },
+    {
+        "name": "Ben  Radford",
+        "title": "Assistant Professor",
+        "email": "bradfor7@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/ben-radford",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Ben%20Radford_edit.png?itok=riaYnGPp",
+        "bio": "Education: Ph.D., Political Science, Duke UniversityCourses Taught: Modeling and Society A DTSC 2301, Modeling and Society B DTSC 2302Biography: \n\tDr. Ben Radford is an Assistant Professor in the Department of Political Science. His research Interest include: applied statistics, conflict, cybersecurity, event data, international conflict, machine learning, natural language processing, neural networks, political forecasting."
+    },
+    {
+        "name": "Zbigniew Ras",
+        "title": "KDD Laboratory Director; Professor",
+        "email": "ras@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/zbigniew-ras",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Ras1_edit.png?itok=msAr4UcZ",
+        "bio": "Education: Ph.D. in Computer Science, University of WarsawCourses Taught: Knowledge Discovery in Databases DSBA/HCIP 6162Biography: \n\tDr. Zbigniew Ras is a professor of computer science at the University of North Carolina, Charlotte. He also holds professorship position in the Institute of Computer Science at the Polish-Japanese Academy of Information Technology in Warsaw, Poland. His PhD degree is from University of Warsaw and DSc Degree from the Polish Academy of Sciences. In 2012, he was awarded National Professorship title by the President of Poland. Dr. Ras' areas of specialization include Knowledge Discovery and Data Mining, Recommender Systems, Health Informatics, Business Analytics, Music Information Retrieval, and Art. He is the Editor-in-Chief of the Journal of Intelligent Information Systems (Springer) and a member of the Editorial Board of several journals. He is the author/editor of 61 books mainly in AI area and the author of more than 350 book chapters, journal and conference papers. He has received many awards including the Harshini V. de Silva Graduate Mentor Award, COIT Graduate Faculty Excellence in Teaching Award, and the Alcoa Foundation Outstanding Faculty Award. He was the finalist of the Bank of America Award for Teaching Excellence."
+    },
+    {
+        "name": "Shannon  Reid",
+        "title": "Associate Professor",
+        "email": "s.reid@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/shannon-reid",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/shannon_reid.jpg?itok=M3DiZTJ0",
+        "bio": "Education: Ph.D. in Criminology, Law and Society, UC IrvineCourses Taught: Special Topics: Geospatial Analytics and Crime DSBA 6010Biography: \n\tDr. Shannon Reid is an Assistant Professor in the Department of Criminal Justice and Criminology within the College of Liberal Arts and Sciences. Her research interests include Criminological Theory, Gangs, GIS Spatial Analysis, Juvenile Delinquency, Policing, Quantitative Methods, Social Network Analysis, and Structural Equation Modeling."
+    },
+    {
+        "name": "Stephen Rohrer",
+        "title": " Associate Professor; Analytics Consultant, OG Data Labs",
+        "email": "srohrer@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/stephen-rohrer-0",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/20180920_131649.jpg?itok=nuFTVlZR",
+        "bio": "Education: Master's of Science in Analytics from North Carolina State University; Bachelor's of Science in Business Administration from Elizabeth City State UniversityCourses Taught: DSBA-HCIP 6160: Database Systems for Data ScientistsBiography: Stephen is the former Head of Data Science at TIAA and Advisor to AI-based start-ups. His professional experience spans Banking, Retail, Healthcare, and Government, focusing on bringing people and data together through Education, Innovation, and Data Science. He has interests and experience in Data & AI Strategy, Data Enrichment, Behavioral Economics, Business Process Automation, Graph Relationship Networks, Deep Learning, Data Science Lifecycle, AI Platform Management, Predictive Modeling, and Natural Language Processing."
+    },
+    {
+        "name": "Chase Romano",
+        "title": "Solutions Consultant - Snowflake",
+        "email": "cromano3@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/chase-romano",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Chase%20Romano-edit.png?itok=g3G1jgNp",
+        "bio": "Education: Master's Degree in Data Science and Business Analytics, UNC CharlotteCourses Taught: Visual Analytics DSBA 5122 Biography:\n\tChase Romano started his career at Phillip O. Berry Academy of Technology as a Statistics and SAS Programming teacher.  After 6 years of working in the education field, he moved to corporate where he worked as a data analyst for Charter and a Data Science Consultant for Duke Energy while also obtaining his master's degree from the School of Data Science at UNC Charlotte.  Currently, Chase is a Solutions Consultant for Snowflake where he is responsible for technical deployments at companies with various backgrounds and is an Associate Graduate Faculty member for the School of Data Science at UNC Charlotte."
+    },
+    {
+        "name": "Eric  Sauda",
+        "title": "Professor, Architecture",
+        "email": "ericsauda@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/eric-sauda",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Eric%20Sauda%20.jpg?itok=qPd2DkqB",
+        "bio": "Education: Courses Taught: NABiography: \n\tEric Sauda is a registered architect who specializes in the use of digital and computational technologies and their transformative effect on architecture. He is director of the Digital Arts Center in the College of Arts + Architecture. His research has focused on the areas of urban visualization and interactive architecture. He works closely with the Urban Visualization Research Group, the Charlotte Visualization Center at the College of Computing and Informatics, the Computing InPlace Research Group, and the Vice-Chancellor for Information Technology."
+    },
+    {
+        "name": "Monika Sawhney",
+        "title": "Associate Professor",
+        "email": "msawhney@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/monika-sawhney",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Dr.%20Monika%20Sawhney_UNCC_headshot.jpeg?itok=vJhX4Te9",
+        "bio": "Education: PhD, MSWCourses Taught: Intro Health Professions & HR, Global Health Issues, Comparative Health Systems, Health System Organization Development and Behavior, Foundations of Global Health, Healthcare Leadership, Ethics, and Inter-Professional CommunicationBiography:\n\tDr. Monika Sawhney is presently working as a Tenured Associate Professor at The University of North Carolina at Charlotte, NC, USA. Dr. Sawhney previously served as an Associate Professor and Director of the Bachelor of Public Health Program at Marshall University. She also served as a Clinical Associate Professor with Marshall University’s Joan C. Edwards School of Medicine (Department of Cardiology Services). Dr. Sawhney serves as an adjunct and visiting professor with the Global Institute of Public Health across reputed academic institutions in India. Currently, Dr. Sawhney is collaborating with organizations in India, Rwanda, and Tanzania. These assignments focus on an overall aim to eradicate diseases and improvise healthcare outcomes in low- and middle-income countries. During her professional career, Dr. Sawhney also worked as a consultant for UNICEF, WHO, and John Snow Inc. in program implementation and evaluation projects. Working in Ethiopia with WHO and CDC, she managed the measles immunization campaign and coordinated POLIO surveillance assignment. Dr. Sawhney also worked with the ministry to help strengthen their health system by focusing on designing and implementing training programs for their health staff working at different levels.\n\tDr. Monika’s professional and research interests primarily focus on reducing the disease burden from Neglected Tropical Diseases and its association with non-communicable diseases and its interaction with communicable diseases, more so across low- and low-middle income countries. Working on various projects in her areas of interest, Dr. Sawhney has developed and sharpened her skills for program/project management and administration, monitoring and evaluation, research and human resources management for the health sector, communication, training, and presentation skills. Some of the recent Public/Global Health assignments Dr. Sawhney has been involved with focus on – (i) Assessing determinants of preeclampsia in Rwanda, (ii) Evaluation of Effectiveness of Pre-Exposure Prophylaxis (PrEP) Interventions with a focus to achieve a continuous reduction in new HIV infections, (iii) Gender dimensions of Tuberculosis in Tanzania, (iv) Facility-based assessments (mainly in African countries), (v) Health systems strengthening to improve the burden of disease from non-communicable and communicable diseases across low and low-middle income countries,(vi) Health services and outcomes research for specific health conditions, (vii) Human Resources Management/Development for the health sector, (viii) Training of health workers/staff, and (ix) Focus groups to measure area-specific health outcomes. Dr. Sawhney has teaching, research, field, and program-related experiences in the varied areas of International/Global Public health in countries such as Austria, Bangladesh, China, Costa Rica, Ethiopia, India, Kenya, Switzerland, Tanzania, Turkey, and the United States of America."
+    },
+    {
+        "name": "George  Shaw",
+        "title": "Assistant Professor",
+        "email": "gshaw11@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/george-shaw",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/George%20Shaw%20500x500.png?itok=owt8xZfp",
+        "bio": "Education: Ph.D. in Library and Information Science, University of South Carolina-ColumbiaCourses Taught: Big Data Design, Storage, and Provenance DSBA/HCIP 6160, Introduction to Health Informatics HCIP 6380Biography: \n\tDr. George Shaw's current research focuses on the intersection of computational social science and public health. He is specifically interested in social media data as an alternative source to collect and analyze behavioral data while developing an analytical framework that incorporates quantitative and qualitative methodologies to study chronic health issues."
+    },
+    {
+        "name": "Felesia Stukes",
+        "title": "Assistant Professor - Johnson C. Smith University",
+        "email": "fstukes@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/felesia-stukes",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Felesia%20Stukes-edit.png?itok=DcUgUyv5",
+        "bio": "Education: Ph.D. in Computer Science, University of North Carolina at CharlotteCourses Taught: Introduction to Programming for Health Informatics HCIP 5376Biography: \n\tDr. Felesia Stukes'is an Assistant Professor at Johnson C. Smith University. Her research explores the use of complexity theory and network science to enhance community organizations that address societal problems. Additionally, Dr. Stukes collaborates with the Virtual Identity, Community, and Entitativity (VICE) Research Group which investigates the role of entitativity in online groups. She has been awarded an NSF grant to develop a new undergraduate minor in Data Science. She is currently an Associate Graduate Faculty member for the School of Data Science at UNC Charlotte."
+    },
+    {
+        "name": "Antonis  Stylianou",
+        "title": "Senior Associate Dean for Faculty and Research; Professor of Management Information Systems",
+        "email": "astylian@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/antonis-stylianou",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Antonis%20Stylianou.png?itok=eYgUQv8W",
+        "bio": "Education: Ph.D., Kent State University; M.B.A., Kent State UniversityCourses Taught: NABiography: \n\tDr. Antonis C. Stylianou joined the Belk College of Business at the University of North Carolina at Charlotte in 1990. Currently, he is the Associate Dean for Faculty and Research and Professor of Management Information Systems. In addition to consulting with several Fortune 1000 companies and nonprofits organizations, his industry experience includes an appointment in the Information Management department at Duke Energy. Dr. Stylianou has published numerous research articles in Management Science, European Journal of Information Systems, Decision Sciences, Decision Support Systems, Information & Management, International Journal of Electronic Commerce, Communications of the ACM, and other journals. He has received funding for his research from the National Science Foundation, the US Department of Education, the National Institute of Standards and Technology, and other sources. In addition to UNC Charlotte, he has taught courses and delivered seminars at Kent State University, Villanova University, Mannheim University (Germany), Cologne University (Germany), and EGADE (Tecnologico de Monterrey, Mexico). He currently serves as a senior editor for the Database for Advances in Information Systems journal."
+    },
+    {
+        "name": "Chandrasekar  Subramaniam",
+        "title": "BISOM Department Chair; Associate Professor of Management Information Systems",
+        "email": "csubrama@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/chandrasekar-subramaniam",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/chandra%20500x500.png?itok=eUjMNwrr",
+        "bio": "Education: Ph.D. in Business Information Systems, University of Illinois Urbana-ChampaignCourses Taught: Big Data Analytics for Competitive Advantage DSBA 6100Biography: \n\tDr. Chandrasekar Subramaniam's research interests include electronic commerce/e-business, IT and enterprise business processes, and inter-organizational information systems. His research projects have been funded by corporations such as Caterpillar, Motorola, and State Farm Insurance and the Center for e-Business and IT Management at the University of Illinois. Dr. Subramaniam has published in several leading journals in information systems and contributed chapters for two books on electronic commerce. Before joining the Ph.D. program, Dr. Subramaniam taught MIS at Bharathidasan Institute of Management, a leading business school in India."
+    },
+    {
+        "name": "Wenwu  Tang",
+        "title": "Center for Applied GIScience Executive Director; Associate Professor",
+        "email": "WenwuTang@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/wenwu-tang",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Wenwu%20Tang.png?itok=4gAa441P",
+        "bio": "Education: Ph.D. Geography, University of Iowa; M.S. Geography, Nanjing UniversityCourses Taught: NABiography: \n\tDr. Wenwu Tang's primary interests are centered on computational science and geographic information science and include: spatiotemporal analysis and modeling of complex adaptive spatial systems (CASS); application of artificial intelligence and, in particular, machine learning and software agents in the study of CASS; and the use of cyberinfrastructure technology to support the resolution of computationally intensive geospatial problems. One thread of my research is focused on the modeling of adaptive spatial phenomena (e.g., movement of animals or pedestrians, land use and land cover change, and diffusion of disease and information). Another thread of my research is to investigate the utility of the advanced cyberinfrastructure technology (including high-performance computing, massive data analysis and handling, and virtual organization) in the resolution of large- and multi-scale spatial problems."
+    },
+    {
+        "name": "Joseph Tenini",
+        "title": "Principal Data Scientist",
+        "email": "WenwuTang@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/joseph-tenini",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Joe_Tenini_Headshot%20-%20Joseph%20Tenini.JPG?itok=fENnbdFT",
+        "bio": "Education: Ph.D. in Mathematics from the University of GeorgiaCourses Taught: DSBA 6156: Applied Machine LearningBiography: With my Ph.D. in Mathematics, I used combinatorics and algebra techniques to understand better abelian varieties' geometry - objects of interest for their use in cryptography. For the past eight years, I've worked as a data scientist across various industries. The highlights of this time include the development of a patient deterioration identification system, currently embedded within the Epic electronic medical record system and in use in over 100 hospitals in the US - as well as the development of the RL-based personalization system currently used 15MM times monthly by Red Ventures' various media properties. "
+    },
+    {
+        "name": "Jean-Claude  Thill",
+        "title": "Knight Distinguished Professor",
+        "email": "jfthill@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/jean-claude-thill",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Jean-Claude%20Thill_0.jpg?itok=0cPeQbTi",
+        "bio": "Education: Ph.D. Geography, Université Catholique de Louvain; M.S. Regional Science, Université Catholique de LouvainCourses Taught: NABiography: \n\tDr. Jean-Claude Thill has a background in economic geography and spatial modeling, work during the 1990s focused on issues of spatial organization associated with the location of economic agents in a competitive environment and with the behaviors underpinning destination choices. His interests relate to two broad themes, namely transportation and mobility systems, and spatial knowledge discovery. In an increasingly mobile world, the ability for people, freight, capital, and ideas to move creates new spatial structures, while erasing others. Dr. Thill is particularly interested in the modalities of spatial operations of transportation and communication networks and of their articulation with their surrounding regions, in technologies and policies that frame these modalities, and in the socio-economic implications on the regional context. An understanding of the complexity and dynamics of new modalities of spatial interaction is suitably gained with new computational techniques of exploratory spatial data analysis and artificial intelligence. These two themes are closely woven throughout his research and teaching."
+    },
+    {
+        "name": "Michael Thompson",
+        "title": "Associate Professor & Associate Chair; Academy for Population Healt Innovation (APHI); Associate Director",
+        "email": "methomp1@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/michael-thompson",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Michael%20Thompson-edit.png?itok=WpYTSMwB",
+        "bio": "Education: DrPH, Department of Health Policy Management, The Johns Hopkins University Bloomberg School of Public Health; M.S. Emergency Health Services, The University of Maryland, Baltimore CountyCourses Taught: Health Informatics Internship HCIP 6400Biography: \n\tDr. Michael Thompson is an Associate Professor of Public Health Sciences and serves as Associate Chair and Directs UNC Charlotte's CAHME-accredited and nationally ranked MHA Program. He also serves as the Associate Director of the Academy for Population Health Innovation (APHI), a unique partnership between Mecklenburg County Public Health and UNC Charlotte. Previously, he directed UNC Charlotte's CEPH-accredited MPH program and the graduate programs in Health Informatics and Analytics. He has over 20 years'experience in actively developing, leading, and seeing accredited public health and health administration programs domestically and internationally."
+    },
+    {
+        "name": "Pamela Thompson",
+        "title": "Professor - Catawba College",
+        "email": "plthomps@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/pamela-thompson",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Pam%20Thompson%281%29.png?itok=fVbNLkbh",
+        "bio": "Education: Ph.D. in Computer Science, UNC CharlotteCourses Taught: Big Data Design, Storage, and Provenance in Healthcare DSBA 6160 /HCIP 6160,Knowledge Discovery in Databases DSBA 6162 / HCIP 6162Biography: \n\tDr. Pamela Thompson is an Associate Professor of Information Systems at Catawba College. She has broad experience in mobile, web, database, IoT, and application development. Specialize in data analytics and knowledge discovery, data driven decision making for strategic results, and leading/training/inspiring rising new technologists in business and other disciplines. She is currently an Associate Graduate Faculty member for the School of Data Science at UNC Charlotte."
+    },
+    {
+        "name": "Scott  Tonidandel",
+        "title": "Professor",
+        "email": " scott.tonidandel@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/scott-tonidandel",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Scott%20Tonidandel%20500x500.png?itok=xBDQYdoq",
+        "bio": "Education: Ph.D. and M.A. in Industrial-Organizational Psychology, Rice UniversityCourses Taught: NABiography: \n\tDr. Scott Tonidandel is a Professor of Management in the Belk College of Business at the University of North Carolina at Charlotte and is a faculty member of the Organizational Science PhD program. His research interests include issues related to leadership effectiveness, the impact of diversity in organizations, and research methods and statistics. His recent work focuses on people analytics and the interface of big data and the organizational sciences. He co-edited the SIOP Frontiers series volume titled Big Data at Work: The Data Science Revolution and Organizational Psychology and recently completed work on a NSF funded project that uses sensors to understand team interactions and the impact of diversity. Dr. Tonidandel serves as an associate editor for the Journal of Business and Psychology, is a former associate editor for Organizational Research Methods, and is a fellow of the Association for Psychological Science, the American Psychological Association, and the Society for Industrial and Organizational Psychology."
+    },
+    {
+        "name": "Jim  Walsh",
+        "title": "Professor",
+        "email": "jimjwalsh@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/jim-walsh",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Jim%20Walsh%20500x500.png?itok=gkb-rsdP",
+        "bio": "Education: Ph.D. International Relations, American UniversityCourses Taught: Modeling and Society DTSC 2301 & DTSC 2302 Biography: \n\tDr. Walsh interest include research on political violence, forced displacement, human rights, intelligence, natural resources and armed conflict. His Expertise is in grant writing and reporting for scientific research and nonprofit organizations."
+    },
+    {
+        "name": "Ryan Wesslen",
+        "title": "Machine Learning Engineer, Explosion",
+        "email": "rwesslen@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/ryan-wesslen",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Ryan%20Wesslen.jpg?itok=_8DBfqiY",
+        "bio": "  Education:Courses Taught: Visual Analytics DSBA 5122/HCIP 5122Biography: \n\tRyan Wesslen is a machine learning engineer at Explosion where he works on Prodigy, a modern annotation tool for creating training data for machine learning models. Ryan’s academic research focuses on human-centered artificial intelligence to investigate ways human-computer interaction and data visualizations can be combined with machine learning and natural language processing. Ryan previously led the Natural Language Processing (NLP) team in Bank of America’s Chief Data Scientist Organization and has additional experience in marketing and credit risk management, analytics, and modeling.WebsiteTwitter\nLinkedIn"
+    },
+    {
+        "name": "Damien Williams",
+        "title": "Assistant Professor",
+        "email": "rwesslen@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/damien-williams",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Damien%20Williams.jpg?itok=JrWmzDmU",
+        "bio": "Damien Patrick Williams is an assistant professor in Philosophy and Data Science at the University of North Carolina Charlotte. A PhD in Science, Technology, and Society, from Virginia Tech in the United States, Damien researches how technologies such as algorithms, machine intelligence, and biotechnologies are impacted by the values, knowledge systems, philosophical explorations, social structures, and even religious beliefs of human beings. He is especially concerned with how the knowledge and experience of marginalized peoples affect the technosocial structures of human societies."
+    },
+    {
+        "name": "Jason Windett",
+        "title": "Associate Professor; Public Policy Doctoral Program Associate Director",
+        "email": "jwindett@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/jason-windett",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Jason_Windett_0_0.jpg?itok=ddFZo-lv",
+        "bio": "Education: Ph.D. in Political Science, UNC Chapel HillCourses Taught: Modeling and Society A DTSC 2301, Modeling and Society B DTSC 2302Biography: \n\tDr. Jason Windett's research agenda focuses broadly on the area of representation in American politics with a focus on state politics, state courts, and gender and politics. His research has appeared or is forthcoming in the American Journal of Political Science, Political Analysis, Political Behavior, Public Opinion Quarterly, American Politics Research, State Politics and Policy Quarterly, the Journal of Women, Politics, and Policy and others. His current research on state courts of last resort and policy diffusion has been supported by multiple grants from the National Science Foundation."
+    },
+    {
+        "name": "Jun  Xu",
+        "title": "Assistant Professor",
+        "email": "Jun.Xu@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/jun-xu-0",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/PI.jpg?itok=yukKGa3q",
+        "bio": "Education: Ph.D., Environmental Engineering/Engineering Mechanics, Columbia University, 2014Courses Taught: Introduction to Solid Mechanics; 7090/8090 Automotive Materials; and Energy Storage SystemsBiography:\nDr. Jun Xu is an Assistant Professor in the Department of Mechanical Engineering & Engineering Science at University of North Carolina at Charlotte. He is the director of Vehicle Energy & Safety Laboratory (VESL, formally known as AVRC) since 2014. He earned his Ph.D. degree from Columbia University in 2014 (under the supervision of Prof. Xi Chen), and he was appointed as Professor at Beihang University, China from 2014 to 2018. Recently, he moved his group to University of North Carolina at Charlotte to continue his academic career. His research expertise sits on lithium-ion battery safety and impact dynamics. Dr. Jun Xu now serves as the Chair of Energy Conversion & Storage Committee, and Vice Chair of the Multifunctional Materials Committee, American Society of Mechanical Engineering (ASME). He is the Founder and Chair of Automotive & Battery Safety Conference (ABSC). He has so far published more than 110 peer-reviewed papers in top journals including Advanced Energy Materials, Nano Energy, Energy Storage Materials, Journal of Material Chemistry A, Journal of Power Sources, Journal of Electrochemical Society, Advanced Materials, Carbon, International Journal of Impact Engineering, International Journal of Mechanical Sciences, Composite Science and Technology, Composite Part A/B,  with more than 3200 citations, H-index=32. Dr. Xu is the recipient of \"40 under 40\" in the Great Charlotte Area by CBJ, 2021."
+    },
+    {
+        "name": "Wlodek Zadrozny",
+        "title": "Professor",
+        "email": "wzadrozn@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/wlodek-zadrozny",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Wlodek.png?itok=Rp0VjEZo",
+        "bio": "Education: Ph.D. in Mathematic, Polish Academy of ScienceCourses Taught: Big Data Analytics for Competitive Advantage DSBA 6100, Modern Data Science Systems DSBA 6345Biography: Dr. Wlodek Zadrozny joined the faculty of UNC Charlotte from the IBM T.J. Watson Research Center. As a scientist at IBM Research, he contributed to a wide range of projects including semantic search applications, natural language dialogue systems/chatbots applied in banking and web sales, and the IBM Watson Jeopardy! project. Dr. Zadrozny has published about a hundred refereed papers, mostly on aspects of natural language-processing, and authored about sixty patents. He is also a recipient of the A. von Humboldt Fellowship, M. Waclawek Prize, and the AAAI Feigenbaum Prize. His research focuses on natural language understanding and its applications. "
+    },
+    {
+        "name": "Kexin  Zhao",
+        "title": "Professor of Management Information Systems",
+        "email": "kzhao2@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/kexin-zhao",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Kexin%20Zhou%20500x500.png?itok=xTpn4Tyw",
+        "bio": "Education: Ph.D. in Business Administration, University of Illinois Urbana-ChampaignCourses Taught: Advanced Business Analytics DSBA 6211Biography: \n\tDr. Kexin Zhao current research focuses on electronic commerce, virtual communities, and e-business standardization. She is also an associate editor of Decision Support Systems and a member of both AIS and INFORMS. Dr. Zhao papers have been accepted in several leading academic journals, including Information Systems Research, Journal of the Association for Information Systems, Journal of Management Information Systems, Journal of Retailing, Decision Sciences, Decision Support Systems, and many others."
+    },
+    {
+        "name": "Jing  Zhou",
+        "title": "Professor of Operations Management",
+        "email": "jzhou7@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/jing-zhou",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Jing%20Zhou%20500x500.png?itok=yp6tSFcf",
+        "bio": "Education: Ph.D. in Operations Management, University of Texas at DallasCourses Taught: Decision Modeling and Analysis via Spreadsheets DSBA 6122Biography: \n\tDr. Jing Zhou's research work focuses on issues addressing supply chain management and coordination, production and inventory control, and operations-marketing interface through applications of dynamic optimization approaches and game theory. She has been published in Production and Operations Management, European Journal of Operational Research, and the Journal of Industrial and Management Optimization and Interfaces."
+    },
+    {
+        "name": "Lina Zhou",
+        "title": "Professor",
+        "email": "lzhou8@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/lina-zhou",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Lina%20Zhou%20500x500.png?itok=6oaVGIFV",
+        "bio": "Education: Ph.D. in Computer Science, Peking UniversityCourses Taught: Business Intelligence and Analytics DSBA 6201Biography: \n\tDr. Lina Zhou's research interests span the areas of social media analytics, deception detection, knowledge management, biomedical informatics, and intelligent mobile interface. She has published articles in journals such as MIS Quarterly, Journal of Management Information Systems, Communications of the ACM, ACM Transaction, IEEE Transactions, Information and Management, and Decision Support Systems. Her research has been sponsored by the National Science Foundation, among others."
+    },
+    {
+        "name": "Dr. Lei Zhu",
+        "title": "Assistant Professor",
+        "email": "lzhu14@uncc.edu",
+        "link": "https://datascience.charlotte.edu/directory/dr-lei-zhu",
+        "thumbnail": "https://datascience.charlotte.edu/sites/datascience.charlotte.edu/files/styles/directory_squares/public/fields/directory/field_directory_image/Lei%20Zhu.jpg?itok=Cflpl3CP",
+        "bio": "Biography:I am currently an Assistant Professor at the University of North Carolina at Charlotte. Before joining UNC Charlotte, I served as an Advanced Transportation Researcher at National Renewable Energy Laboratory (NREL), CO. I have worked at the University of Nevada, Reno (UNR) as a postdoctoral fellow. My research interests include Smart and Sustainable Mobility Systems, Spatial Sensing Technologies.Education:Classes:Research:Honors & Awards:Professional affiliations:"
+    }
+]
