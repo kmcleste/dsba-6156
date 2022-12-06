@@ -55,6 +55,21 @@ class HaystackHelper:
         if not self.data_path.exists():
             os.mkdir(self.data_path)
 
+        # initialize doc store with faculty directory
+        with open(pathlib.Path(os.getcwd(), "src", "api", "directory.json"), "r") as f:
+            init_data = json.load(f)
+        documents: list = []
+        for x in init_data:
+            meta: dict = {
+                "name": x["name"],
+                "title": x["title"],
+                "email": x["email"],
+                "link": x["link"],
+                "thumbnail": x["thumbnail"],
+            }
+            documents.append(Document(content=x["bio"], meta=meta))
+        self.write_documents(documents=documents)
+
     def create_document_store(
         self,
         sql_url: str = "sqlite:///faiss_document_store.db",
@@ -203,7 +218,7 @@ class HaystackHelper:
         self,
         model_name_or_path: str = "deepset/roberta-base-squad2",
         model_version: Optional[str] = None,
-        context_window_size: int = 150,
+        context_window_size: int = 300,
         batch_size: int = 50,
         use_gpu: bool = False,
         devices: Optional[list[Union[str, torch.device]]] = None,
@@ -401,26 +416,25 @@ class HaystackHelper:
         filters: Optional[Dict[str, Any]] = None,
     ) -> dict:
         try:
+            processor: BasePreProcessor = PreProcessor(
+                clean_empty_lines=True,
+                clean_whitespace=True,
+                clean_header_footer=True,
+                split_by="word",
+                split_length=500,
+                split_respect_sentence_boundary=True,
+                split_overlap=0,
+            )
             if isinstance(documents, pathlib.Path):
                 try:
                     # convert multiple filetypes to dicts using helper function
                     documents = convert_files_to_docs(
-                        dir_path=documents, split_paragraphs=True
+                        dir_path=documents, split_paragraphs=False
                     )
-                    # further process documents by breaking into smaller chunks
-                    processor: BasePreProcessor = PreProcessor(
-                        clean_empty_lines=True,
-                        clean_whitespace=True,
-                        clean_header_footer=True,
-                        split_by="word",
-                        split_length=500,
-                        split_respect_sentence_boundary=True,
-                        split_overlap=0,
-                    )
-                    documents = processor.process(documents)
                 except Exception as exc:
                     logger.error(f"Unable to convert files to proper format: {exc}")
                     return {"message": "Unable to convert files to proper format"}
+            documents = processor.process(documents)
             self.document_store.write_documents(
                 documents=documents,
                 index=self.index,

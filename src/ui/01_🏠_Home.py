@@ -26,7 +26,9 @@ def main():
             - See database metrics and explore the indexed documents
         4. [Search](http://127.0.0.1:8501/Search)
             - Perform natural-language semantic search across the index
-        5. [Admin Panel](http://127.0.0.1:8501/Admin_Panel)
+        5. [Generation](http://127.0.0.1:8501/%EF%B8%8F_Generation)
+            - Generate potential questions that the search engine will attempt to answer
+        6. [Admin Panel](http://127.0.0.1:8501/Admin_Panel)
             - API status
 
     """

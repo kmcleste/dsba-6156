@@ -51,9 +51,7 @@ def main():
                             df: pd.DataFrame = pd.DataFrame(
                                 [x for x in r.json()["answers"]]
                             )
-                            df = df[
-                                ["answer", "score", "context", "document_id", "meta"]
-                            ]
+                            df = df[["answer", "score", "context", "document_id"]]
                             st.dataframe(df)
                         else:
                             st.json(r.json())
@@ -76,13 +74,26 @@ def main():
                             endpoint="/document-search", **search_kwargs
                         )
 
+                        json_exists = getattr(r, "json", None)
+                        if callable(json_exists):
+                            resp: dict = r.json()
+                            df = pd.DataFrame(resp["documents"])
+                            st.dataframe(
+                                df[["id", "content", "score"]], use_container_width=True
+                            )
+
                     elif "Search Summarization" in st.session_state.get("search-type"):
                         r: requests.Response = Request.post(
                             endpoint="/search-summarization", **search_kwargs
                         )
 
-                    if r is not None:
-                        st.write(r.json())
+                        json_exists = getattr(r, "json", None)
+                        if callable(json_exists):
+                            resp: dict = r.json()
+                            st.markdown("### Summarization")
+                            st.markdown(f"{resp['documents'][0]['meta']['summary']}")
+                            st.markdown("### Original content")
+                            st.markdown(f"{resp['documents'][0]['content']}")
 
 
 if __name__ == "__main__":

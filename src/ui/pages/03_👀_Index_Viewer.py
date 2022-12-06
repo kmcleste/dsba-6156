@@ -22,7 +22,9 @@ def main():
             col1, col2, col3 = st.columns(3)
 
             col1.metric(label="Documents", value=metrics.get("count"))
-            col2.metric(label="Average Characters", value=metrics.get("chars_mean"))
+            col2.metric(
+                label="Average Characters", value=f"{metrics.get('chars_mean'):.2f}"
+            )
             col3.metric(label="Maximum Characters", value=metrics.get("chars_max"))
             col1.metric(label="Minimum Characters", value=metrics.get("chars_min"))
             col2.metric(label="Median Characters", value=metrics.get("chars_median"))

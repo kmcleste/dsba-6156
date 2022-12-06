@@ -12,13 +12,18 @@ def main():
     logo()
 
     st.markdown("# Generation")
+    st.markdown("#### `experimental`")
 
     fetch_kwargs: dict = {"json": {"index": "semantic"}}
     resp = Request.post(endpoint="/fetch-documents", **fetch_kwargs)
+
+    # TODO: Update all to check if json method is callable first
     if "documents" in resp.json():
         if len(resp.json()["documents"]) > 0:
             options = [x["id"] for x in resp.json()["documents"]]
-            st.multiselect(label="Documents", options=options, key="generation-docs")
+            st.multiselect(
+                label="Document selection", options=options, key="generation-docs"
+            )
 
     with st.form(key="query-form"):
         st.selectbox(
@@ -47,7 +52,7 @@ def main():
                             if "generated_questions" in r.json():
                                 docs: list[dict] = r.json().get("generated_questions")
                                 for doc in docs:
-                                    st.write(f"{doc.get('document_id')}")
+                                    st.write(f"`{doc.get('document_id')}`")
                                     df: pd.DataFrame = pd.DataFrame(
                                         doc.get("questions"), columns=["questions"]
                                     )
@@ -60,14 +65,31 @@ def main():
                         r: requests.Response = Request.post(
                             endpoint="/question-answer-generation", **generation_kwargs
                         )
-                        if r is not None:
+
+                        json_exists = getattr(r, "json", None)
+                        if callable(json_exists):
                             if "queries" in r.json():
-                                # queries = r.json().get("queries")
-                                # answers = r.json().get("answers")
-                                # df: pd.DataFrame = pd.DataFrame(columns=["question", "answer"])
-                                st.write(r.json())
+                                resp: dict = r.json()
+                                queries = resp.get("queries")
+                                answers = resp.get("answers")
+
+                                for idx, query in enumerate(queries):
+                                    st.write(query)
+                                    df: pd.DataFrame = pd.DataFrame(answers[idx])
+                                    st.dataframe(
+                                        df[
+                                            [
+                                                "answer",
+                                                "score",
+                                                "context",
+                                                "document_id",
+                                            ]
+                                        ],
+                                        use_container_width=True,
+                                    )
                             else:
-                                st.error(r.json().get("message"))
+                                st.error(r.json()["message"])
+
             else:
                 st.info("Nothing was selected")
 
